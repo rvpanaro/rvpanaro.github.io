@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Survival Analysis on rvpanaro</title>
+    <link>/tags/survival-analysis/</link>
+    <description>Recent content in Survival Analysis on rvpanaro</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Fri, 04 Jan 2019 14:24:00 -0200</lastBuildDate>
+    
+	<atom:link href="/tags/survival-analysis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>phbp</title>
+      <link>/project/internal-project/</link>
+      <pubDate>Fri, 04 Jan 2019 14:24:00 -0200</pubDate>
+      
+      <guid>/project/internal-project/</guid>
+      <description>phbp project aims to present base risk estimate and related functions based on Proportional Hazards Models using Bernstein Polynomials (BP). For this, a demo was made making use of larynx dataset available at KMSurv Rpackage. Most relevent results were briefly explained and displayed throughout this text.
+Survival analysis Bernstein polynomials Adaptive rejection metropolis sampling within gibbs sampling Jacobian Method  Cox Proportional Hazards (PH) model (partial likelihood) First, we fitted gold standard Cox model.</description>
+    </item>
+    
+  </channel>
+</rss>

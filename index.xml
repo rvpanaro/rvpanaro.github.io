@@ -1,0 +1,910 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>rvpanaro on rvpanaro</title>
+    <link>/</link>
+    <description>Recent content in rvpanaro on rvpanaro</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Fri, 04 Jan 2019 10:44:00 -0200</lastBuildDate>
+    <atom:link href="/" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>phbp</title>
+      <link>/project/internal-project/</link>
+      <pubDate>Fri, 04 Jan 2019 14:24:00 -0200</pubDate>
+      
+      <guid>/project/internal-project/</guid>
+      <description>
+
+&lt;p&gt;&lt;strong&gt;phbp&lt;/strong&gt; project aims to present base risk estimate and related functions based on Proportional Hazards Models using Bernstein Polynomials (BP). For this, a demo was made making use of &lt;code&gt;larynx&lt;/code&gt; dataset available at &lt;strong&gt;KMSurv&lt;/strong&gt; Rpackage. Most relevent results were briefly explained and displayed throughout this text.&lt;/p&gt;
+
+&lt;ul class=&#34;task-list&#34;&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Survival analysis&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Bernstein polynomials&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Adaptive rejection metropolis sampling within gibbs sampling&lt;/label&gt;&lt;/li&gt;
+&lt;li&gt;&lt;label&gt;&lt;input type=&#34;checkbox&#34; checked disabled class=&#34;task-list-item&#34;&gt; Jacobian Method&lt;/label&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;cox-proportional-hazards-ph-model-partial-likelihood&#34;&gt;Cox Proportional Hazards (PH) model (partial likelihood)&lt;/h2&gt;
+
+&lt;p&gt;First, we fitted gold standard Cox model. Due to avoid overflow in the argument to the exponential function, centered but not scaled data were used, these actions do lead to numerical stability as mentioned at &lt;strong&gt;survival&lt;/strong&gt; Rpackage details. For more about proportional hazards models see Klein and Moeschberger(2006).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;larynx$age &amp;lt;- scale(larynx$age, scale = F)
+larynx$stage2 = scale(as.numeric(larynx$stage == 2), scale = F)
+larynx$stage3 = scale(as.numeric(larynx$stage == 3), scale = F)
+larynx$stage4 = scale(as.numeric(larynx$stage == 4), scale = F)
+
+## [1] &amp;quot;env0&amp;quot;
+## character(0)
+## [1] &amp;quot;survival&amp;quot; &amp;quot;KMsurv&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;table style=&#34;width:93%;&#34;&gt;
+&lt;caption&gt;Fitting Proportional Hazards Regression Model: Surv(larynx&lt;span class=&#34;math inline&#34;&gt;&lt;em&gt;t&lt;/em&gt;&lt;em&gt;i&lt;/em&gt;&lt;em&gt;m&lt;/em&gt;&lt;em&gt;e&lt;/em&gt;, &lt;em&gt;l&lt;/em&gt;&lt;em&gt;a&lt;/em&gt;&lt;em&gt;r&lt;/em&gt;&lt;em&gt;y&lt;/em&gt;&lt;em&gt;n&lt;/em&gt;&lt;em&gt;x&lt;/em&gt;&lt;/span&gt;delta) ~ age + stage2 + stage3 + stage4&lt;/caption&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;18%&#34; /&gt;
+&lt;col width=&#34;13%&#34; /&gt;
+&lt;col width=&#34;16%&#34; /&gt;
+&lt;col width=&#34;15%&#34; /&gt;
+&lt;col width=&#34;12%&#34; /&gt;
+&lt;col width=&#34;16%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;center&#34;&gt; &lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;coef&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;exp(coef)&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;se(coef)&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;z&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;p&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;age&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.01903&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1.019&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.01426&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1.335&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.182&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;stage2&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.14&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1.15&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.4625&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.3028&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.762&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;stage3&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.6424&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1.901&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.3561&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1.804&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.07125&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;stage4&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1.706&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;5.507&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.4219&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;4.043&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.00005267&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;Likelihood ratio test=18.31 on 4 df, p=0.001072 n= 90, number of events= 50&lt;/p&gt;
+
+&lt;h2 id=&#34;bernstein-polynomials-and-log-likelihood-function&#34;&gt;Bernstein polynomials and Log-likelihood function&lt;/h2&gt;
+
+&lt;p&gt;BP is often used to aproximate functions in close intervals $[a,b]$, according to Osman and Gosh (2012), it can be used as well to approximate cumulative hazard functions in $[0,  \tau ]$, such that $\tau$ is the time which there is no more survivers, i.e. we assume no cure fraction.&lt;/p&gt;
+
+&lt;p&gt;Basic notations, see Osman and Gosh (2012) for more:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;img/b01.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;B is the polynomial that approximates the cumulative risk function. It is well known that partial (dot over B) gives us the risk function, see Klein and Moeschberger(2006).&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Quantities in red appeared after applying derivate w/ respect to t. Note that those are given according to the summation index k and from here and forth are parameters to be estimated. In blue there is a beta density over  $\tau$  evaluated at $t/ \tau$ , denoted by g.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Getting H back consists of accumulating hazard function $h()$ from 0 to t. This ends up following beta cumulative density eval at $t/ \tau$, after a rearrangement trick.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;We used b and B for polynomials basis instead of g and G on code.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;function (time, m = 0, tau = 0) 
+{
+   n &amp;lt;- length(time)
+   if (sum(time &amp;gt;= 0) != n | m &amp;lt; 0 | tau &amp;lt; 0) {
+       return(NA)
+       break
+   }
+   if (tau == 0) {
+       tau &amp;lt;- max(time)
+   }
+   if (m == 0) {
+       m &amp;lt;- ceiling(sqrt(length(time)))
+   }
+   k &amp;lt;- 1:m
+   b &amp;lt;- matrix(NA, n, m)
+   B &amp;lt;- matrix(NA, n, m)
+   y &amp;lt;- time/tau
+   for (i in 1:n) {
+       for (k in 1:m) {
+           b[i, k] &amp;lt;- dbeta(y[i], k, m - k + 1)/tau
+           B[i, k] &amp;lt;- pbeta(y[i], k, m - k + 1)
+       }
+   }
+   return(list(b = b, B = B, m = m, tau = tau))
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Above one could use sapply function instead of nested &lt;code&gt;for&lt;/code&gt; loops. However, I opted to make a more intelligible code. Unlike the Cox model, the proposed approach does not use partial likelihood.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;img/b02.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;function (par, m, delta, Z, b, B) 
+{
+   gamma &amp;lt;- abs(matrix(par[1:m], ncol = 1))
+   beta &amp;lt;- matrix(par[(m + 1):(m + q)], ncol = 1)
+   q &amp;lt;- length(par) - m
+   eta &amp;lt;- Z %*% beta
+   h &amp;lt;- b %*% gamma
+   H &amp;lt;- B %*% gamma
+   res &amp;lt;- sum(delta * log(h * exp(eta)) - H * exp(eta))
+   return(res)
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Classical inference was made using &lt;code&gt;BFGS&lt;/code&gt; numeric optimization to find the argument (gamma, beta) that maximizes log-likelihood.&lt;/p&gt;
+
+&lt;h2 id=&#34;proportional-hazards-model-related-functions-using-bp&#34;&gt;Proportional hazards model related functions using BP&lt;/h2&gt;
+
+&lt;p&gt;Curves derived from gamma vector estimates obtained with &lt;code&gt;clas$par&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;img/unnamed-chunk-5-1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;bayesian-approach&#34;&gt;Bayesian Approach&lt;/h2&gt;
+
+&lt;p&gt;Bayesian inference wasn&amp;rsquo;t as straight forward as using numerical methods already implemented in R. But it was elegantly done based on gibbs sampling and Adaptive Rejection Metropolis Sampling (ARMS) algorithm. In general, after sampling directly from posterior distribution, Bayesian estimators are calculated for each iteration risk curve.&lt;/p&gt;
+
+&lt;p&gt;However, when sampling from multivariate posterior is not possible, it is usual to sample from posterior conditionals distributions on Gibbs sampling. Even if sampling from conditionals is not possible, there are some alternatives, we recurred to Adaptive Rejection Metropolis Sampling (ARMS) within Gibbs. One can&amp;rsquo;t know, but ARMS requires a grid delimiting the aimed density support, we used &lt;strong&gt;HI&lt;/strong&gt; package &lt;code&gt;arms&lt;/code&gt; function and Jacobian variable transformation to push all variables in [0,1]. See whole Rscript at gibbs.R repository file.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# priors parameters (hyperparameters)
+
+a_gammak = .01
+b_gammak = .01
+
+a_gammak / b_gammak
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] 1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;a_gammak / (b_gammak)^2
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## [1] 100
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;m_beta &amp;lt;- rep(0, q)
+S_beta &amp;lt;- diag(100, q, q)
+
+it &amp;lt;- 1e4
+
+begtime &amp;lt;- Sys.time()
+source(&amp;quot;gibbs.R&amp;quot;)
+library(coda)
+Sys.time() - begtime
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## Time difference of 58.96 secs
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;burnin &amp;lt;- .5 * it
+par_mcmc &amp;lt;- as.mcmc(par_samp[burnin:it, ])
+
+par(mfrow = c(4,4))
+traceplot(par_mcmc)
+par(mfrow = c(4,4))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;img/unnamed-chunk-6-1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;estimates-using-bp&#34;&gt;Estimates using BP&lt;/h2&gt;
+
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;18%&#34; /&gt;
+&lt;col width=&#34;20%&#34; /&gt;
+&lt;col width=&#34;13%&#34; /&gt;
+&lt;col width=&#34;12%&#34; /&gt;
+&lt;col width=&#34;12%&#34; /&gt;
+&lt;col width=&#34;12%&#34; /&gt;
+&lt;col width=&#34;12%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;center&#34;&gt; &lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt; &lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;lower&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;upper&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;mean&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;median&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;SD&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;gamma1&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.09565&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.2332&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.1069&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.1018&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0732&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;gamma2&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.236&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.3944&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.159&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.1374&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.133&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;gamma3&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.000006972&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.3095&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.088&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0441&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.1045&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;gamma4&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.07928&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.3754&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.1042&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0505&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.1239&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;gamma5&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.2653&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.4719&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.1412&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0779&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.1581&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;gamma6&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.00003381&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.727&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.2322&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.1412&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.2434&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;gamma7&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.7544&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.8949&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.2924&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.1966&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.2875&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;gamma8&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.00001158&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.9374&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.2941&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.1854&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.3083&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;gamma9&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.000005073&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.8511&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.2468&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.145&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.2968&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;gamma10&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.000002499&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.9865&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.2772&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.1564&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.3613&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;beta1&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.01927&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.008&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0468&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0201&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0198&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0141&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;beta2&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.1719&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.7233&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1.071&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.159&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.1702&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.4553&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;beta3&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.6585&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.0427&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1.309&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.6505&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.6472&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.3449&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;beta4&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1.799&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.9948&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2.668&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1.795&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1.805&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.4319&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;base-cumulative-risk-and-base-survival-curves&#34;&gt;Base cumulative risk and base survival curves&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;img/unnamed-chunk-8-1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;survival-curves-by-groups-for-a-given-77-years-old-patient&#34;&gt;Survival curves by groups for a given 77 years old patient&lt;/h2&gt;
+
+&lt;p&gt;&lt;img src=&#34;img/unnamed-chunk-9-1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;h2 id=&#34;bayesian-using-rstan-no-u-turn-sampler&#34;&gt;Bayesian using Rstan (No-U-Turn Sampler)&lt;/h2&gt;
+
+&lt;p&gt;Stan is a state-of-the-art platform for statistical modeling, an alternative to Gibbs Sampling seen above.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;# Clear the R workspace and load rstan. # rm(list=ls(all=TRUE))
+library(rstan)
+
+# avoid recompilations
+rstan_options(auto_write = TRUE)
+
+# run different chains in parallel.
+options(mc.cores = parallel::detectCores())
+
+# Prepare data for Stan
+data = list(n = n, m = m, q = q, delta = larynx$delta,
+            Z = Z, B = base$B, b = base$b,
+            a_gammak = a_gammak, b_gammak = b_gammak,
+            m_beta = m_beta[1], S_beta = S_beta[1])
+
+pars = c(&amp;quot;beta&amp;quot;,&amp;quot;gamma&amp;quot;)
+
+initvals = &amp;quot;random&amp;quot;
+
+iter = it # total iterations (including warm-up).
+warmup = it * .5
+chains = 1
+
+begtime &amp;lt;- Sys.time()
+output = stan(file = &amp;quot;bern.stan&amp;quot;, data=data,
+              iter=iter, warmup=warmup, chains=chains,
+              pars=pars, init=initvals, verbose=FALSE)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## 
+## SAMPLING FOR MODEL &#39;bern&#39; NOW (CHAIN 1).
+## Chain 1: 
+## Chain 1: Gradient evaluation took 5.1e-05 seconds
+## Chain 1: 1000 transitions using 10 leapfrog steps per transition would take 0.51 seconds.
+## Chain 1: Adjust your expectations accordingly!
+## Chain 1: 
+## Chain 1: 
+## Chain 1: Iteration:    1 / 10000 [  0%]  (Warmup)
+## Chain 1: Iteration: 1000 / 10000 [ 10%]  (Warmup)
+## Chain 1: Iteration: 2000 / 10000 [ 20%]  (Warmup)
+## Chain 1: Iteration: 3000 / 10000 [ 30%]  (Warmup)
+## Chain 1: Iteration: 4000 / 10000 [ 40%]  (Warmup)
+## Chain 1: Iteration: 5000 / 10000 [ 50%]  (Warmup)
+## Chain 1: Iteration: 5001 / 10000 [ 50%]  (Sampling)
+## Chain 1: Iteration: 6000 / 10000 [ 60%]  (Sampling)
+## Chain 1: Iteration: 7000 / 10000 [ 70%]  (Sampling)
+## Chain 1: Iteration: 8000 / 10000 [ 80%]  (Sampling)
+## Chain 1: Iteration: 9000 / 10000 [ 90%]  (Sampling)
+## Chain 1: Iteration: 10000 / 10000 [100%]  (Sampling)
+## Chain 1: 
+## Chain 1:  Elapsed Time: 98.5036 seconds (Warm-up)
+## Chain 1:                138.742 seconds (Sampling)
+## Chain 1:                237.245 seconds (Total)
+## Chain 1:
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;Sys.time()-begtime
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;## Time difference of 3.981 mins
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-r&#34;&gt;traceplot(output, pars=c(&amp;quot;beta&amp;quot;,&amp;quot;gamma&amp;quot;))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&#34;img/unnamed-chunk-10-1.png&#34; alt=&#34;&#34; /&gt;&lt;/p&gt;
+
+&lt;table&gt;
+&lt;colgroup&gt;
+&lt;col width=&#34;18%&#34; /&gt;
+&lt;col width=&#34;20%&#34; /&gt;
+&lt;col width=&#34;13%&#34; /&gt;
+&lt;col width=&#34;12%&#34; /&gt;
+&lt;col width=&#34;12%&#34; /&gt;
+&lt;col width=&#34;12%&#34; /&gt;
+&lt;col width=&#34;12%&#34; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr class=&#34;header&#34;&gt;
+&lt;th align=&#34;center&#34;&gt; &lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt; &lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;lower&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;upper&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;mean&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;median&lt;/th&gt;
+&lt;th align=&#34;center&#34;&gt;SD&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;gamma1&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.09565&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0725&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0087&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0341&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;gamma2&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.236&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.1786&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.5698&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.3782&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.38&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0996&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;gamma3&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.000006972&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0014&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0022&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0171&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;gamma4&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.07928&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.003&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0041&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0269&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;gamma5&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.2653&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.1752&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0294&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.1303&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;gamma6&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.00003381&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1.183&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.5155&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.6279&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.4486&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;gamma7&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.7544&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1.412&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.3649&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.5334&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;gamma8&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.00001158&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0965&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0437&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.2267&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;gamma9&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.000005073&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0047&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0123&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.1016&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;gamma10&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.000002499&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0046&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0109&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.1031&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;beta1&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.01927&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.0074&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0483&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0193&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0192&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.0142&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;beta2&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.1719&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;-0.8207&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1.054&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.1133&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.1259&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.482&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;odd&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;beta3&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.6585&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.015&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1.415&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.6704&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.6643&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.3555&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr class=&#34;even&#34;&gt;
+&lt;td align=&#34;center&#34;&gt;&lt;strong&gt;beta4&lt;/strong&gt;&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1.799&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.9267&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;2.647&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1.808&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;1.815&lt;/td&gt;
+&lt;td align=&#34;center&#34;&gt;0.4369&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;h2 id=&#34;future-work&#34;&gt;Future Work&lt;/h2&gt;
+
+&lt;p&gt;Investigate and deal with suspicion of cure fraction present in dataset and explore the use of BP for Cox model extensions. In addition to that, a Rpackage will be released to wrap a wide variety of survival models using BP by the end of the year as part of my MSc final project.&lt;/p&gt;
+
+&lt;h2 id=&#34;references&#34;&gt;References&lt;/h2&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Giolo, S. R., &amp;amp; Colosimo, E. A. (2006). Análise de sobrevivência aplicada. Edgard Blucher.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Ibrahim, J. G., Chen, M. H., &amp;amp; Sinha, D. (2001). Bayesian survival analysis. Springer Science &amp;amp; Business Media.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Klein, J. P., &amp;amp; Moeschberger, M. L. (2006). Survival analysis: techniques for censored and truncated data. Springer Science &amp;amp; Business Media.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Lorentz, G. G. (2012). Bernstein polynomials. American Mathematical Soc..&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Osman, M., &amp;amp; Ghosh, S. K. (2012). Nonparametric regression models for right-censored data using Bernstein polynomials. Computational Statistics &amp;amp; Data Analysis, 56(3), 559-573.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Intellectual Property and Privacy Policy</title>
+      <link>/privacy/</link>
+      <pubDate>Fri, 04 Jan 2019 12:28:00 -0200</pubDate>
+      
+      <guid>/privacy/</guid>
+      <description>&lt;p&gt;All content available on the website is freely accessible, authored or co-authored by independent writers. Therefore, all the material is original and was produced with the intention of collaborating with the scientific community. It is not allowed to reproduce the content and to publish it, the use of the intellectual work must be rewarded according to Brazilian Law No. 9,610 of 1998. New collaborators and partners are welcome.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Modelagem e Previsão da Inflação Anual Efetiva medida pelo IPCA</title>
+      <link>/publication/undergraduate-term/</link>
+      <pubDate>Fri, 12 Jan 2018 17:03:00 -0200</pubDate>
+      
+      <guid>/publication/undergraduate-term/</guid>
+      <description>
+
+&lt;h3 id=&#34;índice-de-preços-ao-consumidor-amplo&#34;&gt;Índice de Preços ao Consumidor Amplo&lt;/h3&gt;
+
+&lt;p&gt;A produção do IPCA origina de 3 pesquisas longitudinais.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Pesquisa de Orçamentos Familiares (POF): Ponderação das
+populações-objetivo.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Pesquisa de Locais de Compra (PLC): Cadastro de informantes da
+pesquisa.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Pesquisa de Especificação de Produtos e Serviços (PEPS): Produtos e
+serviços pesquisados.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;O índice leva em consideração 465 sub-itens classificados em 8 grupos.&lt;/p&gt;
+
+&lt;p&gt;&lt;font size=&#34;3&#34; col style=&#34;background-color:MediumSeaGreen; color:white; border-radius: 5px; padding: 10px&#34;&gt;Grupos&lt;/font&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/div&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;alimentação e bebidas,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;artigos de residência,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;transportes,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;comunicação,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;despesas pessoais,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;habitação,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;saúde e&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;cuidados pessoais, vestuário e educação.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;objetivo&#34;&gt;Objetivo&lt;/h2&gt;
+
+&lt;p&gt;O objetivo geral deste trabalho é extrair inferências de séries
+temporais considerando a abordagem clássica de Box-Jenkins (1976).&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Selecionar modelo teórico para representar os dados,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Estimar o modelo através de seus parâmetros, verificar a qualidade
+do ajuste e usar o modelo ajustado para melhor compreensão do
+mecanismo que gera a série,&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Prever valores futuros da série, de h passos à frente, através
+desses modelos, considerando o período total observado ao final da
+série histórica.&lt;/p&gt;&lt;/li&gt;
+
+&lt;li&gt;&lt;p&gt;Comparar a previsão dos modelos e verificar a existência de um
+melhor modelo com base nas medidas de erro de previsão.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id=&#34;referências&#34;&gt;Referências&lt;/h1&gt;
+
+&lt;p&gt;[1] MORETTIN, P. A.; TOLOI, C. Análise de séries temporais. [S.l.]:
+Blucher, 2006.&lt;/p&gt;
+
+&lt;p&gt;[2] OECD. Statistics, Knowledge and Policy: Key Indocators to Inform
+Decision Making. [S.l.]: OECD Publishing, 1996.&lt;/p&gt;
+
+&lt;p&gt;[3] IBGE. Sistema Nacional de Preços ao Consumidor: Métodos de
+Cálculo. [S.l.]: Série Relatórios Metodológicos, Rio e Janeiro: 2006.&lt;/p&gt;
+
+&lt;p&gt;[4] SENRA, N. et al. História das estatísticas brasileiras. [S.l.]:
+Ministério do Planejamento, Orçamento e Gestão, Instituto Brasileiro de
+Geografia e Estatística-IBGE, Centro de Documentação e Disseminação de
+Informações, 2009.&lt;/p&gt;
+
+&lt;p&gt;[5] QUADROS, S. et al. Índices de preços: História, fórmulas e
+divergências. Revista Conjuntura Econômica, v. 45, n. 3, p. 36-37, 1991.&lt;/p&gt;
+
+&lt;p&gt;[6] LOURENÇO, G. M.; ROMERO, M. Indicadores econômicos. FAE BUSINESS
+SCHOOL. Economia empresarial. Curitiba: Associação Franciscana de Ensino
+Senhor Bom Jesus, p. 27-41, 2002.&lt;/p&gt;
+
+&lt;p&gt;[7] IBGE. Disponível em: &lt;a href=&#34;http://www&#34; target=&#34;_blank&#34;&gt;http://www&lt;/a&gt;. ibge. gov. br. Acesso em, v.
+12, 2017.&lt;/p&gt;
+
+&lt;p&gt;[8] FGV. Disponível em: &lt;a href=&#34;http://www&#34; target=&#34;_blank&#34;&gt;http://www&lt;/a&gt;. portal. fgv. br. Acesso em, v.
+12, 2017.&lt;/p&gt;
+
+&lt;p&gt;[9] FIPE. Disponível em: &lt;a href=&#34;http://www&#34; target=&#34;_blank&#34;&gt;http://www&lt;/a&gt;. fipe. org. br. Acesso em, v.
+12, 2017.&lt;/p&gt;
+
+&lt;p&gt;[10] LUQUE, C. A.; VASCONCELLOS, M. A. S. d. Considerações sobre o
+problema da inflação. Manual de economia, v. 5, p. 336-51, 2002.&lt;/p&gt;
+
+&lt;p&gt;[11] SERIGATI, F. C.; POSSAMAI, R. Inflação de demanda. AgroANALYSIS,
+v. 34, n. 05, p. 13-15.&lt;/p&gt;
+
+&lt;p&gt;[12] LOPES, F. L. et al. Inflação inercial, hiperinflação e
+desinflação: notas e conjecturas. Pontifícia Universidade Católica do
+Rio de Janeiro, 1984.&lt;/p&gt;
+
+&lt;p&gt;[13] BRASIL. Decreto n.º 3.008, de 21 de junho de 1999. Diário Oficial
+da União, Seção 1, p. 4, 1999. [14] INMAN, P. Brazil&amp;rsquo;s economy
+overtakes UK to become world&amp;rsquo;s sixth largest. Guardian Newspaper. 2012.&lt;/p&gt;
+
+&lt;p&gt;[15] TREVISANI, P.; JELMAYER, R. Brazil&amp;rsquo;s dilma roussef defends
+austerity measures in tv address. The Wall Street Journal, 2015.&lt;/p&gt;
+
+&lt;p&gt;[16] CARTA, D. C. Rio de janeiro: Ipea, n. 37, out. 2017.&lt;/p&gt;
+
+&lt;p&gt;[17] CARTA, D. C. Rio de janeiro: Ipea, n. 36, jul. 2017.&lt;/p&gt;
+
+&lt;p&gt;[18] BCB. Resolução n.º 4.499, de 30 de junho de 2016. Diário Oficial
+da União, Seção 1, p. 55, 2016. Referências 49&lt;/p&gt;
+
+&lt;p&gt;[19] BCB. Resolução n.º 4.582, de 29 de junho de 2017. Diário Oficial
+da União, Seção 1, p. 37, 2017.&lt;/p&gt;
+
+&lt;p&gt;[21] FARIAS, A. M. L. de; LAURENCEL, L. da C. Números Índices. 2015.&lt;/p&gt;
+
+&lt;p&gt;[22] BROCKWELL, P. J.; DAVIS, R. A. Time series: theory and methods.
+[S.l.]: Springer Science &amp;amp; Business Media, 2013.&lt;/p&gt;
+
+&lt;p&gt;[20] SIDRA, I. Disponível em: www. sidra. ibge. gov. br. [S.l.]: Rio
+de Janeiro, 2017.&lt;/p&gt;
+
+&lt;p&gt;[23] AKAIKE, H. Information theory and an extension of the maximum
+likelihood principle. In: Selected papers of hirotugu akaike. [S.l.]:
+Springer, 1998. p. 199-213.&lt;/p&gt;
+
+&lt;p&gt;[24] EMILIANO, P. C. et al. Critérios de informação de akaike versus
+bayesiano: análise comparativa. 19 o Simpósio Nacional de Probabilidade
+e Estatística, 2010.&lt;/p&gt;
+
+&lt;p&gt;[25] BOX, G. E. et al. Time series analysis: forecasting and control.
+[S.l.]: John Wiley &amp;amp; Sons, 1970.&lt;/p&gt;
+
+&lt;p&gt;[26] DICKEY, D. A.; FULLER, W. A. Distribution of the estimators for
+autoregressive time series with a unit root. Journal of the American
+statistical association, Taylor &amp;amp; Francis, v. 74, n. 366a, p. 427-431,
+1979.&lt;/p&gt;
+
+&lt;p&gt;[27] JARQUE, C. M.; BERA, A. K. Efficient tests for normality,
+homoscedasticity and serial independence of regression residuals.
+Economics letters, Elsevier, v. 6, n. 3, p. 255-259, 1980.&lt;/p&gt;
+
+&lt;p&gt;[28] ARTUSI, R.; VERDERIO, P.; MARUBINI, E. Bravais-pearson and
+spearman correlation coefficients: meaning, test of hypothesis and
+confidence interval. Int J Biol Markers, v. 17, n. 148-151. PMID, p.
+12113584, 2002.&lt;/p&gt;
+
+&lt;p&gt;[29] LJUNG, G. M.; BOX, G. E. On a measure of lack of fit in time
+series models. Biometrika, Oxford University Press, v. 65, n. 2, p.
+297-303, 1978.&lt;/p&gt;
+
+&lt;p&gt;[30] DEBATES, C. de; REAL, A. de P.; PEIXOTO, A. d. S. O plano real.
+Assembleia Legislativa do Estado de Minas Gerais, 2004.&lt;/p&gt;
+
+&lt;p&gt;[31] HARRISON, J.; WEST, M. Bayesian forecasting &amp;amp; dynamic models.
+[S.l.]: Springer New York City, 1999.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>R para n00bs</title>
+      <link>/project/external-project/</link>
+      <pubDate>Thu, 04 Jan 2018 13:52:00 -0200</pubDate>
+      
+      <guid>/project/external-project/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>CV</title>
+      <link>/cv/cv/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/cv/cv/</guid>
+      <description>
+
+
+&lt;div id=&#34;education&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;EDUCATION&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Universidade Federal de Minas Gerais - UFMG&lt;/em&gt;, M.S. Statistics 2018–current&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Interests&lt;/strong&gt;: Bayesian survival analysis and statistical computing&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Universidade Federal Fluminense - UFF&lt;/em&gt;, B.S. Statistics 2013–2017&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Modeling and Forecasting of Annual Effective Inflation&lt;/em&gt; (portuguese translated) CR 7.6/10&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;University of Wisconsin Platteville - UWP&lt;/em&gt;, Brazilian Scientific Mobility Program 2014–2015&lt;/p&gt;
+&lt;p&gt;Mathematics (ABET Accredited) GPA 3.4/4.0&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;employment&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;EMPLOYMENT&lt;/h1&gt;
+&lt;p&gt;&lt;em&gt;Business Modelling Project (UFMG):&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Research Fellow 2018–current&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;Documentation Active &amp;amp; Intelligent Design Laboratory (UFF):&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Intern, statistical support in case studies 2017&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;em&gt;Grupo de Planejamento e Pesquisa - GPP:&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Intern, coding and results reporting on market and opinion researches 2016–2018&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div id=&#34;languages&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;LANGUAGES&lt;/h1&gt;
+&lt;p&gt;Native portuguese, fluent English and comprehensive Spanish&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;skills&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;SKILLS&lt;/h1&gt;
+&lt;p&gt;R&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Markdown, HUGO, dplyr, etc.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Python&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;pytorch&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;LaTeX&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;complete articles and reports&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Statistical Software System&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;proc freq, proc print and other procedures&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;MS Office&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;pivot tables&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/div&gt;
+&lt;div id=&#34;awards&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;AWARDS&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;2014&lt;/strong&gt; &lt;em&gt;Brazilian Scientific Mobility Program&lt;/em&gt; Awarded one year scholarship at UWP granted by CAPES.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;REFERENCES&lt;/h1&gt;
+&lt;p&gt;Vinícius Mayrink, Ph.D.&lt;/p&gt;
+&lt;p&gt;Statistics Department&lt;/p&gt;
+&lt;p&gt;Federal University of Minas Gerais&lt;/p&gt;
+&lt;p&gt;ICEx&lt;/p&gt;
+&lt;p&gt;Av. Antônio Carlos 6627&lt;/p&gt;
+&lt;p&gt;Pampulha Campus&lt;/p&gt;
+&lt;p&gt;Belo Horizonte, MG 31270-901&lt;/p&gt;
+&lt;p&gt;+55 31- 3409-5900&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:vdinizm@gmail.com&#34;&gt;vdinizm@gmail.com&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Ana Beatriz Fonseca, Ph.D.&lt;/p&gt;
+&lt;p&gt;Statistics Department&lt;/p&gt;
+&lt;p&gt;Fluminense Federal University&lt;/p&gt;
+&lt;p&gt;Mathematics and Statistics Institute&lt;/p&gt;
+&lt;p&gt;Rua Prof. Marcos Waldemar de Freitas Reis Niterói, RJ 24210-201&lt;/p&gt;
+&lt;p&gt;+55 21-2629-2005&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:abmfonseca@id.uff.br&#34;&gt;abmfonseca@id.uff.br&lt;/a&gt;&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;Kristin Dalby, ESL Coordinator&lt;/p&gt;
+&lt;p&gt;International Programs Office&lt;/p&gt;
+&lt;p&gt;University of Wisconsin – Madison&lt;/p&gt;
+&lt;p&gt;716 Langdon St #301&lt;/p&gt;
+&lt;p&gt;Madison, WI 53706&lt;/p&gt;
+&lt;p&gt;+1 608-265-6329&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;mailto:kdalby@wisc.edu&#34;&gt;kdalby@wisc.edu&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

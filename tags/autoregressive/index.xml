@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>autoregressive on rvpanaro</title>
+    <link>/tags/autoregressive/</link>
+    <description>Recent content in autoregressive on rvpanaro</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018</copyright>
+    <lastBuildDate>Fri, 12 Jan 2018 17:03:00 -0200</lastBuildDate>
+    
+	<atom:link href="/tags/autoregressive/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Modelagem e Previsão da Inflação Anual Efetiva medida pelo IPCA</title>
+      <link>/publication/undergraduate-term/</link>
+      <pubDate>Fri, 12 Jan 2018 17:03:00 -0200</pubDate>
+      
+      <guid>/publication/undergraduate-term/</guid>
+      <description>Índice de Preços ao Consumidor Amplo A produção do IPCA origina de 3 pesquisas longitudinais.
+ Pesquisa de Orçamentos Familiares (POF): Ponderação das populações-objetivo.
+ Pesquisa de Locais de Compra (PLC): Cadastro de informantes da pesquisa.
+ Pesquisa de Especificação de Produtos e Serviços (PEPS): Produtos e serviços pesquisados.
+  O índice leva em consideração 465 sub-itens classificados em 8 grupos.
+Grupos
+
+ alimentação e bebidas,
+ artigos de residência,</description>
+    </item>
+    
+  </channel>
+</rss>
