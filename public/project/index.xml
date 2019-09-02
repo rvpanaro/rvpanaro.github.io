@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | renaro</title>
+    <link>/project/</link>
+      <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/logo.png</url>
+      <title>Projects</title>
+      <link>/project/</link>
+    </image>
+    
+    <item>
+      <title>Rn00bs</title>
+      <link>/project/rn00bs/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/rn00bs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bsem</title>
+      <link>/project/bsem/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/bsem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>caprecap</title>
+      <link>/project/caprecap/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/caprecap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spsurv</title>
+      <link>/project/spsurv/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/spsurv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>traderbot</title>
+      <link>/project/traderbot/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/traderbot/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

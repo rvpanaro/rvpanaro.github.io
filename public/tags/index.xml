@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags | renaro</title>
+    <link>/tags/</link>
+      <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tags</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Thu, 05 Sep 2019 19:45:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/logo.png</url>
+      <title>Tags</title>
+      <link>/tags/</link>
+    </image>
+    
+    <item>
+      <title>Dynamic Linear Model</title>
+      <link>/tags/dynamic-linear-model/</link>
+      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
+      <guid>/tags/dynamic-linear-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SARIMA</title>
+      <link>/tags/sarima/</link>
+      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
+      <guid>/tags/sarima/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>inflation</title>
+      <link>/tags/inflation/</link>
+      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
+      <guid>/tags/inflation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>/tags/machine-learning/</link>
+      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
+      <guid>/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rstan</title>
+      <link>/tags/rstan/</link>
+      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
+      <guid>/tags/rstan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bernstein polynomial</title>
+      <link>/tags/bernstein-polynomial/</link>
+      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
+      <guid>/tags/bernstein-polynomial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>classification</title>
+      <link>/tags/classification/</link>
+      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
+      <guid>/tags/classification/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ensemble</title>
+      <link>/tags/ensemble/</link>
+      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
+      <guid>/tags/ensemble/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>survival</title>
+      <link>/tags/survival/</link>
+      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
+      <guid>/tags/survival/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>piecewise regression</title>
+      <link>/tags/piecewise-regression/</link>
+      <pubDate>Thu, 23 May 2019 08:30:00 +0000</pubDate>
+      <guid>/tags/piecewise-regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>segmented</title>
+      <link>/tags/segmented/</link>
+      <pubDate>Thu, 23 May 2019 08:30:00 +0000</pubDate>
+      <guid>/tags/segmented/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>academic</title>
+      <link>/tags/academic/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/academic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>aft</title>
+      <link>/tags/aft/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/aft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bsem</title>
+      <link>/tags/bsem/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/bsem/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>caprecap</title>
+      <link>/tags/caprecap/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/caprecap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cox</title>
+      <link>/tags/cox/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/cox/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>odds</title>
+      <link>/tags/odds/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/odds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>semiparametric</title>
+      <link>/tags/semiparametric/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/semiparametric/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>traderbot</title>
+      <link>/tags/traderbot/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/tags/traderbot/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
