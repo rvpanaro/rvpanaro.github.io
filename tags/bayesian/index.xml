@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>survival | renaro</title>
-    <link>/tags/survival/</link>
-      <atom:link href="/tags/survival/index.xml" rel="self" type="application/rss+xml" />
-    <description>survival</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Thu, 23 May 2019 11:30:00 +0000</lastBuildDate>
+    <title>bayesian | renaro</title>
+    <link>/tags/bayesian/</link>
+      <atom:link href="/tags/bayesian/index.xml" rel="self" type="application/rss+xml" />
+    <description>bayesian</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Wed, 27 Apr 2016 00:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/logo.png</url>
-      <title>survival</title>
-      <link>/tags/survival/</link>
+      <title>bayesian</title>
+      <link>/tags/bayesian/</link>
     </image>
     
     <item>
-      <title>SEMIPARAMETRIC SURVIVAL ANALYSIS VIA BERNSTEIN POLYNOMIALS</title>
-      <link>/talk/spsurv/</link>
-      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
-      <guid>/talk/spsurv/</guid>
+      <title>bsem</title>
+      <link>/project/bsem/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/bsem/</guid>
       <description></description>
     </item>
     
