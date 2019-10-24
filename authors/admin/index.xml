@@ -12,14 +12,5 @@
       <link>/authors/admin/</link>
     </image>
     
-    <item>
-      <title></title>
-      <link>/authors/admin/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/authors/admin/</guid>
-      <description>&lt;p&gt;Mr. Panaro is a Fluminense graduate from UFF and former Capes fellow during a sandwich period in USA. At Platteville-WI, he learned principles of accounting, macroeconomics and finance, as well as object-oriented programming in C ++. Back in Niterói, he served as Euclides da Cunha Foundation fellow in a Big databaset project by Shell using RSQL. In addition, he was an intern at the GPP Institute for electoral and market Research. Renato currently lives in Beagá, is part of the postgraduate program at DEST-UFMG and is a Cristiano Ottoni Foundation fellow in a CEMIG research project in which he explores applications using the RStan integration. Recently, he also completed a Python deep learning extension course.&lt;/p&gt;
-</description>
-    </item>
-    
   </channel>
 </rss>

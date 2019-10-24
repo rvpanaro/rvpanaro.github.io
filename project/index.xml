@@ -13,14 +13,6 @@
     </image>
     
     <item>
-      <title>Rn00bs</title>
-      <link>/project/rn00bs/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/rn00bs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>bsem</title>
       <link>/project/bsem/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
@@ -33,6 +25,14 @@
       <link>/project/caprecap/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       <guid>/project/caprecap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rn00bs</title>
+      <link>/project/rn00bs/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      <guid>/project/rn00bs/</guid>
       <description></description>
     </item>
     

@@ -20,21 +20,5 @@
       <description></description>
     </item>
     
-    <item>
-      <title>caprecap</title>
-      <link>/project/caprecap/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/caprecap/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>spsurv</title>
-      <link>/project/spsurv/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/project/spsurv/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

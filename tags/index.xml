@@ -5,7 +5,7 @@
     <link>/tags/</link>
       <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Thu, 05 Sep 2019 19:45:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Wed, 27 Nov 2019 09:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/logo.png</url>
       <title>Tags</title>
@@ -13,18 +13,82 @@
     </image>
     
     <item>
-      <title>Dynamic Linear Model</title>
-      <link>/tags/dynamic-linear-model/</link>
-      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
-      <guid>/tags/dynamic-linear-model/</guid>
+      <title>Bernstein Polynomials</title>
+      <link>/tags/bernstein-polynomials/</link>
+      <pubDate>Wed, 27 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/tags/bernstein-polynomials/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>SARIMA</title>
-      <link>/tags/sarima/</link>
+      <title>Proportional Hazards</title>
+      <link>/tags/proportional-hazards/</link>
+      <pubDate>Wed, 27 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/tags/proportional-hazards/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Semiparametric Survival Analysis</title>
+      <link>/tags/semiparametric-survival-analysis/</link>
+      <pubDate>Wed, 27 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/tags/semiparametric-survival-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Autoencoder</title>
+      <link>/tags/autoencoder/</link>
+      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/tags/autoencoder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bayesian Inference</title>
+      <link>/tags/bayesian-inference/</link>
+      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/tags/bayesian-inference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Principal Component Analysis Regression</title>
+      <link>/tags/principal-component-analysis-regression/</link>
+      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/tags/principal-component-analysis-regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Regression tree</title>
+      <link>/tags/regression-tree/</link>
+      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/tags/regression-tree/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Structural Equation Models</title>
+      <link>/tags/structural-equation-models/</link>
+      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/tags/structural-equation-models/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Box-Jenkins</title>
+      <link>/tags/box-jenkins/</link>
       <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
-      <guid>/tags/sarima/</guid>
+      <guid>/tags/box-jenkins/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dynamic Linear Model</title>
+      <link>/tags/dynamic-linear-model/</link>
+      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
+      <guid>/tags/dynamic-linear-model/</guid>
       <description></description>
     </item>
     
@@ -37,18 +101,26 @@
     </item>
     
     <item>
-      <title>Machine Learning</title>
-      <link>/tags/machine-learning/</link>
-      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
-      <guid>/tags/machine-learning/</guid>
+      <title>IPCA</title>
+      <link>/tags/ipca/</link>
+      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
+      <guid>/tags/ipca/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Rstan</title>
-      <link>/tags/rstan/</link>
-      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
-      <guid>/tags/rstan/</guid>
+      <title>SARIMA</title>
+      <link>/tags/sarima/</link>
+      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
+      <guid>/tags/sarima/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Time Series</title>
+      <link>/tags/time-series/</link>
+      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
+      <guid>/tags/time-series/</guid>
       <description></description>
     </item>
     
@@ -77,6 +149,22 @@
     </item>
     
     <item>
+      <title>Machine Learning</title>
+      <link>/tags/machine-learning/</link>
+      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
+      <guid>/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rstan</title>
+      <link>/tags/rstan/</link>
+      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
+      <guid>/tags/rstan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>survival</title>
       <link>/tags/survival/</link>
       <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
@@ -101,90 +189,10 @@
     </item>
     
     <item>
-      <title>academic</title>
-      <link>/tags/academic/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/academic/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>aft</title>
-      <link>/tags/aft/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/aft/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>bayesian</title>
-      <link>/tags/bayesian/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/bayesian/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>bsem</title>
-      <link>/tags/bsem/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/bsem/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>caprecap</title>
-      <link>/tags/caprecap/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/caprecap/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>cox</title>
-      <link>/tags/cox/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/cox/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>odds</title>
-      <link>/tags/odds/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/odds/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>rn00bs</title>
-      <link>/tags/rn00bs/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/rn00bs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>sem</title>
-      <link>/tags/sem/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/sem/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>semiparametric</title>
-      <link>/tags/semiparametric/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/semiparametric/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>traderbot</title>
-      <link>/tags/traderbot/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      <guid>/tags/traderbot/</guid>
+      <title>Energy Market</title>
+      <link>/tags/energy-market/</link>
+      <pubDate>Thu, 28 Feb 2019 09:00:00 +0000</pubDate>
+      <guid>/tags/energy-market/</guid>
       <description></description>
     </item>
     
