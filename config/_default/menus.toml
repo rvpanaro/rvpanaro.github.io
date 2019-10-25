@@ -25,15 +25,11 @@
     url = "about/CVITAE Renato Panaro.pdf"
     weight = 60
 
-[[main]]
-  name = "Projects"
-  url = "work/#projects"
-  weight = 70
 
 [[main]]
-  name = "Rn00bs"
+  name = "<img src='img/rn00bs.png'>"
   url = "https://www.rn00bs.com.br/#posts"
-  weight = 80
+  weight = 120
 
 [[main]]
   name = "<i class='fab fa-github-alt'></i>"

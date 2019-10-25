@@ -5,7 +5,7 @@
     <link>/talk/</link>
       <atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Thu, 05 Sep 2019 19:45:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright>
     <image>
       <url>/img/logo.png</url>
       <title>Recent &amp; Upcoming Talks</title>
@@ -13,10 +13,26 @@
     </image>
     
     <item>
+      <title>Bernstein Polynomial based Proportional Hazards regression</title>
+      <link>/talk/wasa/</link>
+      <pubDate>Wed, 27 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/talk/wasa/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Predictive modeling of economic and financial monitoring of The Brazilian Electricity Regulatory Agency (ANEEL)</title>
+      <link>/talk/csds/</link>
+      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/talk/csds/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Modelagem e Previsão da Inflação Anual Efetiva medida pelo IPCA</title>
-      <link>/talk/dlm/</link>
+      <link>/talk/este/</link>
       <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
-      <guid>/talk/dlm/</guid>
+      <guid>/talk/este/</guid>
       <description></description>
     </item>
     
@@ -41,6 +57,14 @@
       <link>/talk/segmented/</link>
       <pubDate>Thu, 23 May 2019 08:30:00 +0000</pubDate>
       <guid>/talk/segmented/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Previsão do consumo de energia elétrica via Modelos Dinâmicos</title>
+      <link>/talk/dsufrj/</link>
+      <pubDate>Thu, 28 Feb 2019 09:00:00 +0000</pubDate>
+      <guid>/talk/dsufrj/</guid>
       <description></description>
     </item>
     

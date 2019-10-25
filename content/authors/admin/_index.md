@@ -6,7 +6,7 @@ education:
   courses:
   - course: Master of Science in Statistics
     institution: Universidade Federal de Minas Gerais
-    year: 2019
+    year: 2020
   - course: Bachelor of Science in Statistics
     institution: Universidade Federal Fluminense/ University of Wisconsin - Platteville
     year: 2017
@@ -20,7 +20,7 @@ name: Renato Panaro
 organizations:
 - name: Rn00bs
   url: "https://www.rn00bs.com.br/"
-role: Inferencialist
+role: Statistician
 social:
 - icon: lattes
   icon_pack: ai
@@ -34,8 +34,12 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/rvpanaro
+- icon: kaggle
+  icon_pack: fab
+  link: https://www.kaggle.com/renaro
 superuser: true
 user_groups:
 ---
 
-Mr. Panaro is a Fluminense graduate from UFF and former Capes fellow during a sandwich period in USA. At Platteville-WI, he learned principles of accounting, macroeconomics and finance, as well as object-oriented programming in C ++. Back in Niterói, he served as Euclides da Cunha Foundation fellow in a Big databaset project by Shell using RSQL. In addition, he was an intern at the GPP Institute for electoral and market Research. Renato currently lives in Beagá, is part of the postgraduate program at DEST-UFMG and is a Cristiano Ottoni Foundation fellow in a CEMIG research project in which he explores applications using the RStan integration. Recently, he also completed a Python deep learning extension course.
+Panaro is a Fluminense Statistician graduated from UFF. Prior to graduation, he was a Capes Fellow during a sandwich period in the US. At UWP, he learned principles of accounting, macroeconomics, and finance, as well as notions of object-oriented programming in Javascript and C ++. Back in Brazil, he worked supporting analytics from the GPP Electoral Research Institute for two years. Simultaneously,
+he took part in a research project, associated with the Euclides da Cunha Foundation, which aimed to extract information from Shell's large databases. He recently moved from his hometown to be part of the DEST-UFMG post graduation program. Today, he lives in Beagá, is a member of CEMIG's computational statistical research project and explores statistical applications using Stan software in medical research.

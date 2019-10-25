@@ -51,7 +51,8 @@ Welcome to my **personal** website.
 </center>
   
 - Click [**here**](about/) if you want to know more about me.
-- [**Join**](https://rn00bs.com.br/) Rn00bs community.
-- Check out my [**work**](work/).
+- [**Read**](https://rn00bs.com.br/post/) recent posts in Rn00bs community.
+- Check out the upcoming [**talks**](talk/).
 
 
+ 

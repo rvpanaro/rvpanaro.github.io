@@ -46,18 +46,25 @@ subtitle = ""
   icon = "r-project"
   icon_pack = "fab"
   name = "R"
-  description = ""
+  description = " RStan, RSQL, <br> forecast, plspm, <br> blogdown <br>tidyverse & base libraries"
 
 [[feature]]
   icon = "python"
   icon_pack = "fab"
   name = "Python"
-  description = ""
+  description = "pandas, numpy,<br> seaborn, matplotlib, <br>scikit-learn & pytorch"
   
 [[feature]]
   icon = "chart-line"
   icon_pack = "fas"
   name = "Statistics"
-  description = ""  
+  description = "Bayesian & Maximum Likelihood"
+  
+[[feature]]
+  icon = "file-code"
+  icon_pack = "fas"
+  name = "HTML and Css"
+  description = "Basic tweaks"
   
 +++
+
