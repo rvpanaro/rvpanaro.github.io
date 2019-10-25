@@ -74,7 +74,7 @@ tribble(
   "TOEFL iBT (score 96)", "ETS Global", "2019",
   "Accredited Statistician", "CONRE-2", "2018",
   "Hands on Deep Learning course extension", "DCC-UFMG", "2018",
-  "Rn00bs Founder", "Rn00bs", "2018"
+  "Rn00bs founder", "Rn00bs", "2018"
 ) %>%
   brief_entries(certificate, year, from)
 ```
@@ -87,16 +87,29 @@ tribble(
 ) %>%
   brief_entries(scholarship, year, from)
 ```
+
 # Technical Skills
 ```{r}
 tribble(
   ~ skill, ~ category,
   "Analytical", "Statistical Modelling, Bayesian Statistics, Survival Analysis and Structural Equation Modelling",
-  "Programming", "R (advanced), LaTeX (advanced), Stan (advanced), SQL, MQL, HTML, TOML, CSS, JavaScript, Python and SAS",
-  "Python Packages", "Pandas, numpy, Matplotlib and Seaborn",
+  "Programming", "R (advanced), LaTeX (advanced), Stan (advanced), HTML, TOML, CSS, JavaScript, SQL, Python, SAS and MQL",
+  "Python libraries", "Pandas, numpy, Matplotlib and Seaborn, Scikit-learn",
   "Tools", "Git, RStudio, Jupyter, SAS 9.0, MySQL Workbench and MetaTrader 5"
 ) %>%
   detailed_entries(with = skill, what = category)
+```
+
+# Presentations
+```{r}
+tribble(
+  ~ competition, ~ from, ~ year,
+  "Semiparametric Survival Analysis via Bernstein Polynomials", "SER IV", "2019",
+  "Predictive modeling of economic and financial monitoring of The Brazilian Electricity Regulatory Agency (ANEEL)", "CSDS", "2019",
+  "Bernstein Polynomial based Proportional Hazards regression", "WASA", "2019"
+
+) %>%
+  brief_entries(competition, year, from)
 ```
 
 # Papers
