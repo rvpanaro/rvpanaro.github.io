@@ -1,0 +1,19 @@
+[6] Config.pm:304> INFO - This is Biber 2.12
+[6] Config.pm:307> INFO - Logfile is 'CVITAE-Renato-Panaro.blg'
+[73] biber:315> INFO - === Thu Oct 24, 2019, 22:55:34
+[139] Biber.pm:371> INFO - Reading 'CVITAE-Renato-Panaro.bcf'
+[442] Biber.pm:889> INFO - Found 3 citekeys in bib section 0
+[482] Biber.pm:4093> INFO - Processing section 0
+[510] Biber.pm:4254> INFO - Looking for bibtex format file '/home/renatovp/Documents/rvpanaro/static/about/ref.bib' for section 0
+[511] bibtex.pm:1512> INFO - LaTeX decoding ...
+[524] bibtex.pm:1329> INFO - Found BibTeX data source '/home/renatovp/Documents/rvpanaro/static/about/ref.bib'
+[756] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[756] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[756] Biber.pm:3921> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[757] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[803] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[803] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[803] Biber.pm:3921> INFO - Sorting list 'ynt/global//global/global' of type 'entry' with template 'ynt' and locale 'en-US'
+[803] Biber.pm:3927> INFO - No sort tailoring available for locale 'en-US'
+[818] bbl.pm:636> INFO - Writing 'CVITAE-Renato-Panaro.bbl' with encoding 'UTF-8'
+[839] bbl.pm:739> INFO - Output to CVITAE-Renato-Panaro.bbl

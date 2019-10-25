@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview | renaro</title>
+    <link>/courses/example/</link>
+      <atom:link href="/courses/example/index.xml" rel="self" type="application/rss+xml" />
+    <description>Overview</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Sun, 01 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/logo.png</url>
+      <title>Overview</title>
+      <link>/courses/example/</link>
+    </image>
+    
+    <item>
+      <title>Análise de Séries Temporais - Parte 1</title>
+      <link>/courses/example/ast/</link>
+      <pubDate>Sun, 01 Sep 2019 00:00:00 +0100</pubDate>
+      <guid>/courses/example/ast/</guid>
+      <description>
+
+&lt;p&gt;In this tutorial, I&amp;rsquo;ll share my top 10 tips for getting started with Academic:&lt;/p&gt;
+
+&lt;h2 id=&#34;soon&#34;&gt;Soon&lt;/h2&gt;
+
+&lt;p&gt;&amp;hellip;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

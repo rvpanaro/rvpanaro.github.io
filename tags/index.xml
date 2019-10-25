@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags | renaro</title>
+    <link>/tags/</link>
+      <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tags</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Wed, 27 Nov 2019 09:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/logo.png</url>
+      <title>Tags</title>
+      <link>/tags/</link>
+    </image>
+    
+    <item>
+      <title>Bernstein Polynomials</title>
+      <link>/tags/bernstein-polynomials/</link>
+      <pubDate>Wed, 27 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/tags/bernstein-polynomials/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Proportional Hazards</title>
+      <link>/tags/proportional-hazards/</link>
+      <pubDate>Wed, 27 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/tags/proportional-hazards/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Semiparametric Survival Analysis</title>
+      <link>/tags/semiparametric-survival-analysis/</link>
+      <pubDate>Wed, 27 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/tags/semiparametric-survival-analysis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Autoencoder</title>
+      <link>/tags/autoencoder/</link>
+      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/tags/autoencoder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bayesian Inference</title>
+      <link>/tags/bayesian-inference/</link>
+      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/tags/bayesian-inference/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Principal Component Analysis Regression</title>
+      <link>/tags/principal-component-analysis-regression/</link>
+      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/tags/principal-component-analysis-regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Regression tree</title>
+      <link>/tags/regression-tree/</link>
+      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/tags/regression-tree/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Structural Equation Models</title>
+      <link>/tags/structural-equation-models/</link>
+      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/tags/structural-equation-models/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Box-Jenkins</title>
+      <link>/tags/box-jenkins/</link>
+      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
+      <guid>/tags/box-jenkins/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Dynamic Linear Model</title>
+      <link>/tags/dynamic-linear-model/</link>
+      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
+      <guid>/tags/dynamic-linear-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>inflation</title>
+      <link>/tags/inflation/</link>
+      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
+      <guid>/tags/inflation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>IPCA</title>
+      <link>/tags/ipca/</link>
+      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
+      <guid>/tags/ipca/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SARIMA</title>
+      <link>/tags/sarima/</link>
+      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
+      <guid>/tags/sarima/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Time Series</title>
+      <link>/tags/time-series/</link>
+      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
+      <guid>/tags/time-series/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bernstein polynomial</title>
+      <link>/tags/bernstein-polynomial/</link>
+      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
+      <guid>/tags/bernstein-polynomial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>classification</title>
+      <link>/tags/classification/</link>
+      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
+      <guid>/tags/classification/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ensemble</title>
+      <link>/tags/ensemble/</link>
+      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
+      <guid>/tags/ensemble/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>/tags/machine-learning/</link>
+      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
+      <guid>/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rstan</title>
+      <link>/tags/rstan/</link>
+      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
+      <guid>/tags/rstan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>survival</title>
+      <link>/tags/survival/</link>
+      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
+      <guid>/tags/survival/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>piecewise regression</title>
+      <link>/tags/piecewise-regression/</link>
+      <pubDate>Thu, 23 May 2019 08:30:00 +0000</pubDate>
+      <guid>/tags/piecewise-regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>segmented</title>
+      <link>/tags/segmented/</link>
+      <pubDate>Thu, 23 May 2019 08:30:00 +0000</pubDate>
+      <guid>/tags/segmented/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Energy Market</title>
+      <link>/tags/energy-market/</link>
+      <pubDate>Thu, 28 Feb 2019 09:00:00 +0000</pubDate>
+      <guid>/tags/energy-market/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

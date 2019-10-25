@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>inflation | renaro</title>
+    <link>/tags/inflation/</link>
+      <atom:link href="/tags/inflation/index.xml" rel="self" type="application/rss+xml" />
+    <description>inflation</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Thu, 05 Sep 2019 19:45:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/logo.png</url>
+      <title>inflation</title>
+      <link>/tags/inflation/</link>
+    </image>
+    
+    <item>
+      <title>Modelagem e Previsão da Inflação Anual Efetiva medida pelo IPCA</title>
+      <link>/talk/este/</link>
+      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
+      <guid>/talk/este/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
