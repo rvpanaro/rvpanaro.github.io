@@ -4,12 +4,12 @@
   
   <url>
     <loc>/courses/example/</loc>
-    <lastmod>2019-09-02T01:21:09-03:00</lastmod>
+    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/courses/example/ast/</loc>
-    <lastmod>2019-09-02T01:21:09-03:00</lastmod>
+    <lastmod>2019-09-01T00:00:00+01:00</lastmod>
   </url>
   
   <url>
@@ -24,6 +24,11 @@
   
   <url>
     <loc>/tags/proportional-hazards/</loc>
+    <lastmod>2019-11-27T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/talk/</loc>
     <lastmod>2019-11-27T09:00:00+00:00</lastmod>
   </url>
   
@@ -109,67 +114,67 @@
   
   <url>
     <loc>/about/</loc>
-    <lastmod>2019-09-02T01:21:09-03:00</lastmod>
+    <lastmod>2019-05-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/work/</loc>
-    <lastmod>2019-09-02T01:21:09-03:00</lastmod>
+    <lastmod>2019-05-25T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/bernstein-polynomial/</loc>
-    <lastmod>2019-09-02T01:21:09-03:00</lastmod>
+    <lastmod>2019-05-23T11:30:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/talk/ensemble/</loc>
-    <lastmod>2019-09-02T01:21:09-03:00</lastmod>
+    <lastmod>2019-05-23T11:30:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/classification/</loc>
-    <lastmod>2019-09-02T01:21:09-03:00</lastmod>
+    <lastmod>2019-05-23T11:30:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/ensemble/</loc>
-    <lastmod>2019-09-02T01:21:09-03:00</lastmod>
+    <lastmod>2019-05-23T11:30:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/machine-learning/</loc>
-    <lastmod>2019-09-02T01:21:09-03:00</lastmod>
+    <lastmod>2019-05-23T11:30:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/rstan/</loc>
-    <lastmod>2019-09-02T01:21:09-03:00</lastmod>
+    <lastmod>2019-05-23T11:30:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/talk/spsurv/</loc>
-    <lastmod>2019-09-02T01:21:09-03:00</lastmod>
+    <lastmod>2019-05-23T11:30:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/survival/</loc>
-    <lastmod>2019-09-02T01:21:09-03:00</lastmod>
+    <lastmod>2019-05-23T11:30:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/talk/segmented/</loc>
-    <lastmod>2019-09-02T01:21:09-03:00</lastmod>
+    <lastmod>2019-05-23T08:30:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/piecewise-regression/</loc>
-    <lastmod>2019-09-02T01:21:09-03:00</lastmod>
+    <lastmod>2019-05-23T08:30:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/segmented/</loc>
-    <lastmod>2019-09-02T01:21:09-03:00</lastmod>
+    <lastmod>2019-05-23T08:30:00+00:00</lastmod>
   </url>
   
   <url>
@@ -184,27 +189,26 @@
   
   <url>
     <loc>/slides/</loc>
-    <lastmod>2019-09-02T01:21:09-03:00</lastmod>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/slides/example/</loc>
-    <lastmod>2019-09-02T01:21:09-03:00</lastmod>
+    <lastmod>2019-02-05T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/privacy/</loc>
-    <lastmod>2019-09-02T01:21:09-03:00</lastmod>
+    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>/terms/</loc>
-    <lastmod>2019-09-02T01:21:09-03:00</lastmod>
+    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>/authors/admin/</loc>
-    <lastmod>2019-09-02T01:21:09-03:00</lastmod>
   </url>
   
   <url>
@@ -217,16 +221,10 @@
   
   <url>
     <loc>/courses/</loc>
-    <lastmod>2019-09-02T01:21:09-03:00</lastmod>
   </url>
   
   <url>
     <loc>/publication_types/</loc>
-  </url>
-  
-  <url>
-    <loc>/talk/</loc>
-    <lastmod>2019-09-02T01:21:09-03:00</lastmod>
   </url>
   
 </urlset>

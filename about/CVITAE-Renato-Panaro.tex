@@ -1,0 +1,221 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+%
+% Adapted to be an Rmarkdown template by Mitchell O'Hara-Wild
+% 23 November 2018
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
+
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+
+\definecolor{awesome}{HTML}{414141}
+
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
+
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
+
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
+
+\def\endfirstpage{\newpage}
+
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+
+\name{Renato Valladares Panaro}{}
+
+\position{Statistician}
+\address{Belo Horizonte, MG}
+
+\mobile{+55 21 9 97188 7955}
+\email{\href{mailto:renatovp@ufmg.br}{\nolinkurl{renatovp@ufmg.br}}}
+\github{rvpanaro}
+\linkedin{rvpanaro}
+
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \skype{skype-id}
+% \reddit{reddit-id}
+
+
+\usepackage{booktabs}
+
+% Templates for detailed entries
+% Arguments: what when with where why
+\usepackage{etoolbox}
+\def\detaileditem#1#2#3#4#5{%
+\cventry{#1}{#3}{#4}{#2}{\ifx#5\empty\else{\begin{cvitems}#5\end{cvitems}}\fi}}
+\def\detailedsection#1{\begin{cventries}#1\end{cventries}}
+
+% Templates for brief entries
+% Arguments: what when with
+\def\briefitem#1#2#3{\cvhonor{}{#1}{#3}{#2}}
+\def\briefsection#1{\begin{cvhonors}#1\end{cvhonors}}
+
+\providecommand{\tightlist}{%
+	\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+%------------------------------------------------------------------------------
+
+
+%%%% BIBLIOGRAPHY
+% Bibliography formatting
+
+\usepackage[sorting=ynt,citestyle=authoryear,bibstyle=authoryear-comp,defernumbers=true,maxnames=20,giveninits=true, bibencoding=utf8, terseinits=true, uniquename=init,dashed=false,doi=false,isbn=false,natbib=true,backend=biber]{biblatex}
+
+\DeclareFieldFormat{url}{\url{#1}}
+\DeclareFieldFormat[article]{pages}{#1}
+\DeclareFieldFormat[inproceedings]{pages}{\lowercase{pp.}#1}
+\DeclareFieldFormat[incollection]{pages}{\lowercase{pp.}#1}
+\DeclareFieldFormat[article]{volume}{\mkbibbold{#1}}
+\DeclareFieldFormat[article]{number}{\mkbibparens{#1}}
+\DeclareFieldFormat[article]{title}{\MakeCapital{#1}}
+\DeclareFieldFormat[article]{url}{}
+\DeclareFieldFormat[inproceedings]{title}{#1}
+\DeclareFieldFormat{shorthandwidth}{#1}
+\DeclareFieldFormat{extradate}{}
+
+% No dot before number of articles
+\usepackage{xpatch}
+\xpatchbibmacro{volume+number+eid}{\setunit*{\adddot}}{}{}{}
+
+% Remove In: for an article.
+\renewbibmacro{in:}{%
+  \ifentrytype{article}{}{%
+  \printtext{\bibstring{in}\intitlepunct}}}
+
+%\makeatletter
+%\DeclareDelimFormat[cbx@textcite]{nameyeardelim}{\addspace}
+%\makeatother
+
+\setlength{\bibitemsep}{1.8pt}
+\setlength{\bibhang}{.9cm}
+%\renewcommand{\bibfont}{\fontsize{12}{14}}
+
+\renewcommand*{\bibitem}{\addtocounter{papers}{1}\item \mbox{}\hskip-0.9cm\hbox to 0.9cm{\hfill\arabic{papers}.~\,}}
+\defbibenvironment{bibliography}
+{\list{}
+  {\setlength{\leftmargin}{\bibhang}%
+   \setlength{\itemsep}{\bibitemsep}%
+   \setlength{\parsep}{\bibparsep}}}
+{\endlist}
+{\bibitem}
+
+\renewcommand{\bibfont}{\normalfont\fontsize{10}{12.4}\selectfont}
+% Counters for keeping track of papers
+\newcounter{papers}
+
+\DeclareSortingTemplate{ty}{
+  \sort{
+    \field{title}
+  }
+  \sort{
+    \field{year}
+  }
+}
+\DeclareBibliographyCategory{bib-/home/renatovp/Documents/rvpanaro/static/about/ref.bib-2585303}
+\bibliography{/home/renatovp/Documents/rvpanaro/static/about/ref.bib}
+
+\begin{document}
+
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader
+
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+% 2019-02-14 Chris Umphlett - add flexibility to the document name in footer, rather than have it be static Curriculum Vitae
+\makecvfooter
+  {October, 2019}
+    {Renato Valladares Panaro~~~·~~~Curriculum Vitae}
+  {\thepage}
+
+
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%------------------------------------------------------------------------------
+
+
+
+\hypertarget{education}{%
+\section{Education}\label{education}}
+
+\detailedsection{\detaileditem{MS c in Statistics}{Mar. 2018 - Fev. 2020}{Federal University of Minas Gerais}{Minas Gerais, Brazil}{\item{Outstanding performance (> 90) for: Statistical Inference (DIP EST825U), Stat. Methods of Reliability and Survival Analysis (DIP EST863U), Computational Methods Applied to Statistics (DIP EST865U) and Mathematical analysis (DIP EST865B)}\item{Contributing with an open source R package to allow Semiparametric Survival Analysis using Bernstein Polynomial in R}}\detaileditem{BS c in Statistics}{Apr. 2013 - Dez. 2017}{Federal Fluminense University}{Rio de Janeiro, Brazil}{\item{WAM of 76}\item{Term paper: Modeling and Forecasting Effective Annual Inflation Measured by IPCA.}\item{Outstanding performance for: Sources of Information (GET00134), Data Visualization (GET00183), Applied Statistics (GET00128), Scientific Research Methodology (GET00137), Multivariate Analysis (GET00126) and Time Series Analysis (GET00127)}}\detaileditem{Brazil Scientific Mobility Program}{Jun. 2014 - May 2015}{University of Wisconsin Platteville}{Wisconsin, United States}{\item{GPA: 3.413}\item{Outstanding performance for: 
+  Global Business (BUSADMIN 1300), Management Accounting (ACCTING 2020), Data Analysis \& Decision Mkg (BUSADMIN 2340) and Principles of Macroeconomics (ECONOMIC 2130)}\item{Attended Summer ESL classes with outsdanding performance for: US Culture (ESL 134), Acad Listening and Note-Taking (ESL 151), Acad Speaking (ESL 152) and Special Topics (ESL 155)}}}
+
+\hypertarget{experience}{%
+\section{Experience}\label{experience}}
+
+\detailedsection{\detaileditem{Research Assistant (Fundação Christiano Ottoni)}{Oct. 2018 - Present}{Decision Support and Reliability Lab, LADEC}{School of Engineering-UFMG}{\item{Supervisors include Marcelo Azevedo Costa and Vinícius Diniz Mayrink}\item{Consulting project with Companhia Energética de Minas Gerais, CEMIG}\item{Contributing to the development of an open source package to ease Bayesian Structured Equation Modelling via RStan and Shiny}\item{The project consisted of Computational statistical modeling of the CEMIG-D business model using databases and technical knowledge (P\&D D636)}}\detaileditem{Research Intern (Fundação Euclides da Cunha)}{Oct. 2017 - Dez. 2017}{Documentation Active \& Intelligent Design Laboratory, ADDLABS}{IC-UFF}{\item{Supervisors include Rodrigo Salvador Monteiro and Ludmilla da Silva Viana Jacobson}\item{Consulting project with Shell Brasil}\item{Contributed with consistency checks, data granularity reduction and time series visualizations of structured in large datasets (17 million).}\item{The ADDSSI project aimed to research the use of artificial intelligence techniques to support the diagnosis of flow and pressure control anomalies in a water injection system of a UEP. In addition, it offers a dynamic model of the injection system of an FPSO and allows simulations of the behavior of its equipment and its control loop, comparing the results with the actual measurements loaded directly from the process plant. (ADDSSI)}}\detaileditem{Intern}{Jan. 2016 - Mar. 2018}{Planejamento e Pesquisa Ltda, GPP}{Niterói, Rio de Janeiro}{\item{Supervisors include Adriano Von Pfuhl Rodrigues and Francisco Guimarães}\item{Consulting with Naturgy Energy Group S.A., ILOS, CASSI, Previ and local politicians}\item{Analytics support to electoral and market research, outcome reporting and data consistency supervision}}\detaileditem{Volunteer}{October 23, 2019}{Feira Brasileira de Colégios de Aplicação e Escolas Técnicas, VII FEBRAT}{Pedagogical Center-UFMG, }{\item{Evaluation of the scientific merit of the papers submitted to the event.}\item{VII FEBRAT is a scientific fair that promotes the dissemination of works developed by students of Basic Education and Vocational and Technological Education under the guidance of teachers from different areas of knowledge. The theme of the 2019 edition is “Bioeconomics: Diversity and Wealth for Sustainable Development”.}}}
+
+\newpage
+
+\hypertarget{achievements}{%
+\section{Achievements}\label{achievements}}
+
+\hypertarget{certificates-and-licenses}{%
+\subsection{Certificates and licenses}\label{certificates-and-licenses}}
+
+\briefsection{\briefitem{TOEFL iBT (score 96)}{2019}{ETS Global}\briefitem{Accredited Statistician}{2018}{CONRE-2}\briefitem{Hands on Deep Learning course extension}{2018}{DCC-UFMG}\briefitem{Rn00bs Founder}{2018}{Rn00bs}}
+
+\hypertarget{scholarships}{%
+\subsection{Scholarships}\label{scholarships}}
+
+\briefsection{\briefitem{International experience through one year scholarship granted by Higher Education Improvement Coordination (CAPES) at UWP.}{2014}{UWP}}
+
+\hypertarget{technical-skills}{%
+\section{Technical Skills}\label{technical-skills}}
+
+\detailedsection{\detaileditem{Statistical Modelling, Bayesian Statistics, Survival Analysis and Structural Equation Modelling}{}{Analytical}{}{\empty}\detaileditem{R (advanced), LaTeX (advanced), Stan (advanced), SQL, MQL, HTML, TOML, CSS, JavaScript, Python and SAS}{}{Programming}{}{\empty}\detaileditem{Pandas, numpy, Matplotlib and Seaborn}{}{Python Packages}{}{\empty}\detaileditem{Git, RStudio, Jupyter, SAS 9.0, MySQL Workbench and MetaTrader 5}{}{Tools}{}{\empty}}
+
+\hypertarget{papers}{%
+\section{Papers}\label{papers}}
+
+\defbibheading{bib-/home/renatovp/Documents/rvpanaro/static/about/ref.bib-2585303}{}
+\addtocategory{bib-/home/renatovp/Documents/rvpanaro/static/about/ref.bib-2585303}{dos4classificador,
+patricio4change,
+panaro4semiparametric}
+\newrefcontext[sorting=none]\setcounter{papers}{0}\pagebreak[3]
+\printbibliography[category=bib-/home/renatovp/Documents/rvpanaro/static/about/ref.bib-2585303,heading=none]\setcounter{papers}{0}
+
+\nocite{dos4classificador,
+patricio4change,
+panaro4semiparametric}
+
+\end{document}
