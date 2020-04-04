@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/talk/</loc>
+    <lastmod>2019-11-18T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/tags/autoencoder/</loc>
     <lastmod>2019-11-18T09:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -23,11 +28,6 @@
     <loc>/tags/principal-component-analysis-regression/</loc>
     <lastmod>2019-11-18T09:00:00+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/talk/</loc>
-    <lastmod>2019-11-18T09:00:00+00:00</lastmod>
   </url>
   
   <url>
