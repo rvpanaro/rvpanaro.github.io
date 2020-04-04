@@ -1,40 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags | renaro</title>
+    <title>Tags | rvpanaro</title>
     <link>/tags/</link>
       <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Wed, 27 Nov 2019 09:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Mon, 18 Nov 2019 09:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/logo.png</url>
+      <url>/img/icon-192.png</url>
       <title>Tags</title>
       <link>/tags/</link>
     </image>
-    
-    <item>
-      <title>Bernstein Polynomials</title>
-      <link>/tags/bernstein-polynomials/</link>
-      <pubDate>Wed, 27 Nov 2019 09:00:00 +0000</pubDate>
-      <guid>/tags/bernstein-polynomials/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Proportional Hazards</title>
-      <link>/tags/proportional-hazards/</link>
-      <pubDate>Wed, 27 Nov 2019 09:00:00 +0000</pubDate>
-      <guid>/tags/proportional-hazards/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Semiparametric Survival Analysis</title>
-      <link>/tags/semiparametric-survival-analysis/</link>
-      <pubDate>Wed, 27 Nov 2019 09:00:00 +0000</pubDate>
-      <guid>/tags/semiparametric-survival-analysis/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Autoencoder</title>
@@ -93,14 +69,6 @@
     </item>
     
     <item>
-      <title>inflation</title>
-      <link>/tags/inflation/</link>
-      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
-      <guid>/tags/inflation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>IPCA</title>
       <link>/tags/ipca/</link>
       <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
@@ -125,6 +93,30 @@
     </item>
     
     <item>
+      <title>inflation</title>
+      <link>/tags/inflation/</link>
+      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
+      <guid>/tags/inflation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>/tags/machine-learning/</link>
+      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
+      <guid>/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rstan</title>
+      <link>/tags/rstan/</link>
+      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
+      <guid>/tags/rstan/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>bernstein polynomial</title>
       <link>/tags/bernstein-polynomial/</link>
       <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
@@ -145,22 +137,6 @@
       <link>/tags/ensemble/</link>
       <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
       <guid>/tags/ensemble/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Machine Learning</title>
-      <link>/tags/machine-learning/</link>
-      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
-      <guid>/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rstan</title>
-      <link>/tags/rstan/</link>
-      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
-      <guid>/tags/rstan/</guid>
       <description></description>
     </item>
     

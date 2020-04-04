@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Structural Equation Models | renaro</title>
+    <title>Structural Equation Models | rvpanaro</title>
     <link>/tags/structural-equation-models/</link>
       <atom:link href="/tags/structural-equation-models/index.xml" rel="self" type="application/rss+xml" />
     <description>Structural Equation Models</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Mon, 18 Nov 2019 09:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/logo.png</url>
+      <url>/img/icon-192.png</url>
       <title>Structural Equation Models</title>
       <link>/tags/structural-equation-models/</link>
     </image>

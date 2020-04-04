@@ -1,24 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Recent &amp; Upcoming Talks | renaro</title>
+    <title>Recent &amp; Upcoming Talks | rvpanaro</title>
     <link>/talk/</link>
       <atom:link href="/talk/index.xml" rel="self" type="application/rss+xml" />
     <description>Recent &amp; Upcoming Talks</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Wed, 27 Nov 2019 09:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Mon, 18 Nov 2019 09:00:00 +0000</lastBuildDate>
     <image>
-      <url>/img/logo.png</url>
+      <url>/img/icon-192.png</url>
       <title>Recent &amp; Upcoming Talks</title>
       <link>/talk/</link>
     </image>
-    
-    <item>
-      <title>Bernstein Polynomial based Proportional Hazards regression</title>
-      <link>/talk/wasa/</link>
-      <pubDate>Wed, 27 Nov 2019 09:00:00 +0000</pubDate>
-      <guid>/talk/wasa/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Predictive modeling of economic and financial monitoring of The Brazilian Electricity Regulatory Agency (ANEEL)</title>

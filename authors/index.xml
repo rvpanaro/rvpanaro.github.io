@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Authors | renaro</title>
+    <title>Authors | rvpanaro</title>
     <link>/authors/</link>
       <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright>
     <image>
-      <url>/img/logo.png</url>
+      <url>/img/icon-192.png</url>
       <title>Authors</title>
       <link>/authors/</link>
     </image>
@@ -17,8 +17,7 @@
       <link>/authors/admin/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>/authors/admin/</guid>
-      <description>&lt;p&gt;Panaro is a Fluminense Statistician graduated from UFF. Prior to graduation, he was a Capes Fellow during a sandwich period in the US. At UWP, he learned principles of accounting, macroeconomics, and finance, as well as notions of object-oriented programming in Javascript and C ++. Back in Brazil, he worked supporting analytics from the GPP Electoral Research Institute for two years. Simultaneously,
-he took part in a research project, associated with the Euclides da Cunha Foundation, which aimed to extract information from Shell&amp;rsquo;s large databases. He recently moved from his hometown to be part of the DEST-UFMG post graduation program. Today, he lives in Beagá, is a member of CEMIG&amp;rsquo;s computational statistical research project and explores statistical applications using Stan software in medical research.&lt;/p&gt;
+      <description>&lt;p&gt;Panaro is an accredited statistician currently enrolled in the PhD program in Statistics at the University of São Paulo. Passionate about data-driven decision, extreme traveler, night programmer and video game addict.&lt;/p&gt;
 </description>
     </item>
     

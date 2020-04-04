@@ -1,9 +1,9 @@
 {
-  "name": "renaro",
-  "short_name": "renaro",
+  "name": "rvpanaro",
+  "short_name": "rvpanaro",
   "lang": "en-us",
-  "theme_color": "#2962ff",
-  "background_color": "#2962ff",
+  "theme_color": "#44438d",
+  "background_color": "#44438d",
   "icons": [{
     "src": "img/icon-192.png",
     "sizes": "192x192",

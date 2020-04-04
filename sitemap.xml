@@ -3,58 +3,15 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/courses/example/</loc>
-    <lastmod>2018-09-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/courses/example/ast/</loc>
-    <lastmod>2019-09-01T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/talk/wasa/</loc>
-    <lastmod>2019-11-27T09:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/bernstein-polynomials/</loc>
-    <lastmod>2019-11-27T09:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/proportional-hazards/</loc>
-    <lastmod>2019-11-27T09:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/talk/</loc>
-    <lastmod>2019-11-27T09:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2019-11-27T09:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/semiparametric-survival-analysis/</loc>
-    <lastmod>2019-11-27T09:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-11-27T09:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/tags/autoencoder/</loc>
     <lastmod>2019-11-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/bayesian-inference/</loc>
     <lastmod>2019-11-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -65,36 +22,54 @@
   <url>
     <loc>/tags/principal-component-analysis-regression/</loc>
     <lastmod>2019-11-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/talk/</loc>
+    <lastmod>2019-11-18T09:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/regression-tree/</loc>
     <lastmod>2019-11-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/structural-equation-models/</loc>
     <lastmod>2019-11-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2019-11-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2019-11-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/box-jenkins/</loc>
     <lastmod>2019-09-05T19:45:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/dynamic-linear-model/</loc>
     <lastmod>2019-09-05T19:45:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/inflation/</loc>
-    <lastmod>2019-09-05T19:45:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/ipca/</loc>
     <lastmod>2019-09-05T19:45:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -105,11 +80,19 @@
   <url>
     <loc>/tags/sarima/</loc>
     <lastmod>2019-09-05T19:45:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/time-series/</loc>
     <lastmod>2019-09-05T19:45:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/inflation/</loc>
+    <lastmod>2019-09-05T19:45:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -123,33 +106,20 @@
   </url>
   
   <url>
-    <loc>/tags/bernstein-polynomial/</loc>
-    <lastmod>2019-05-23T11:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/talk/ensemble/</loc>
-    <lastmod>2019-05-23T11:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/classification/</loc>
-    <lastmod>2019-05-23T11:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/ensemble/</loc>
     <lastmod>2019-05-23T11:30:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/machine-learning/</loc>
     <lastmod>2019-05-23T11:30:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/rstan/</loc>
     <lastmod>2019-05-23T11:30:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -158,8 +128,27 @@
   </url>
   
   <url>
+    <loc>/tags/bernstein-polynomial/</loc>
+    <lastmod>2019-05-23T11:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/classification/</loc>
+    <lastmod>2019-05-23T11:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/ensemble/</loc>
+    <lastmod>2019-05-23T11:30:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/survival/</loc>
     <lastmod>2019-05-23T11:30:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -170,16 +159,19 @@
   <url>
     <loc>/tags/piecewise-regression/</loc>
     <lastmod>2019-05-23T08:30:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/segmented/</loc>
     <lastmod>2019-05-23T08:30:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/energy-market/</loc>
     <lastmod>2019-02-28T09:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -190,6 +182,7 @@
   <url>
     <loc>/slides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -213,18 +206,17 @@
   
   <url>
     <loc>/authors/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/</loc>
-  </url>
-  
-  <url>
-    <loc>/courses/</loc>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>/publication_types/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>
