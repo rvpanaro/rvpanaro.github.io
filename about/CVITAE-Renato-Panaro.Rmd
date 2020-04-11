@@ -1,16 +1,16 @@
 ---
-name: Renato Valladares Panaro
+name: Renato Panaro
 date: "`r format(Sys.time(), '%B, %Y')`"
 qualifications: Statistics, BSc
 position: Statistician
-address: Belo Horizonte, MG
+address: 
 phone: +55 21 9 97188 7955
-email: renatovp@ufmg.br
+email: renatovp@ime.usp.br
 website: rvpanaro.github.io
 github: rvpanaro
 linkedin: rvpanaro
-twitter: 
-headcolor: 414141
+twitter: rvpanaro
+headcolor: 4169e1 
 output: vitae::awesomecv
 header_includes:
   - \usepackage{cite}
@@ -26,93 +26,202 @@ knitr::opts_chunk$set(echo = FALSE)
 options(tinytex.verbose = TRUE)
 ```
 
-# Education
+# Position
+
 ```{r}
 tribble(
   ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
-  "MS c in Statistics", "Federal University of Minas Gerais", "Minas Gerais, Brazil", "Mar. 2018 - Fev. 2020", "Outstanding performance (> 90) for: Statistical Inference (DIP EST825U), Stat. Methods of Reliability and Survival Analysis (DIP EST863U), Computational Methods Applied to Statistics (DIP EST865U) and Mathematical analysis (DIP EST865B)",
-    "MS c in Statistics", "Federal University of Minas Gerais", "Minas Gerais, Brazil", "Mar. 2018 - Fev. 2020", "Contributing with an open source R package to allow Semiparametric Survival Analysis using Bernstein Polynomial in R",
-    "BS c in Statistics", "Federal Fluminense University", "Rio de Janeiro, Brazil", "Apr. 2013 - Dez. 2017", "WAM of 76",
-    "BS c in Statistics", "Federal Fluminense University", "Rio de Janeiro, Brazil", "Apr. 2013 - Dez. 2017", "Term paper: Modeling and Forecasting Effective Annual Inflation Measured by IPCA.",
-    "BS c in Statistics", "Federal Fluminense University", "Rio de Janeiro, Brazil", "Apr. 2013 - Dez. 2017", "Outstanding performance for: Sources of Information (GET00134), Data Visualization (GET00183), Applied Statistics (GET00128), Scientific Research Methodology (GET00137), Multivariate Analysis (GET00126) and Time Series Analysis (GET00127)",
-        "Brazil Scientific Mobility Program", "University of Wisconsin Platteville", "Wisconsin, United States", "Jun. 2014 - May 2015", "GPA: 3.413",
-      "Brazil Scientific Mobility Program", "University of Wisconsin Platteville", "Wisconsin, United States", "Jun. 2014 - May 2015", "Outstanding performance for: 
-  Global Business (BUSADMIN 1300), Management Accounting (ACCTING 2020), Data Analysis & Decision Mkg (BUSADMIN 2340) and Principles of Macroeconomics (ECONOMIC 2130)",
-        "Brazil Scientific Mobility Program", "University of Wisconsin Platteville", "Wisconsin, United States", "Jun. 2014 - May 2015", "Attended Summer ESL classes with outsdanding performance for: US Culture (ESL 134), Acad Listening and Note-Taking (ESL 151), Acad Speaking (ESL 152) and Special Topics (ESL 155)",
+  "Philosophy Doctor in Statistics (in progress)", "Universidade Federal de São Paulo", "São Paulo, Brazil", "Mar. 20-present", "Funding Agency: CAPES Improvement Coordination") %>% 
+  detailed_entries(degree, dates, uni, loc, details)
+```
+
+# Education
+
+
+```{r}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+      "Master of science in Statistics", "Universidade Federal de Minas Gerais", "Minas Gerais, Brazil", "Mar. 2018 - Feb. 2020", "WAM: 87/100",
+    "Master of science in Statistics", "Universidade Federal de Minas Gerais", "Minas Gerais, Brazil", "Mar. 2018 - Feb. 2020", "Dissertation: spsurv An R package for semi-parametric survival analysis.",
+    "Master of science in Statistics", "Universidade Federal de Minas Gerais", "Minas Gerais, Brazil", "Mar. 2018 - Feb. 2020", "Funding Agency: Fundação Christiano Ottoni",) %>% 
+  detailed_entries(degree, dates, uni, loc, details)
+```
+
+Outstanding performance (> A-): 
+
+- Statistical Inference (DIP EST825U)
+- Stat Methods of Reliability and Survival Analysis (DIP EST863U)
+- Computational Methods Applied to Statistics (DIP EST865U) 
+- Mathematical analysis (DIP EST865B)
+
+
+
+```{r}
+tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+      "Bachelor of science in Statistics", "Universidade Federal Fluminense", "Rio de Janeiro, Brazil", "Apr. 2013 - Dec. 2017", "WAM: 76/100",
+    "Bachelor of science in Statistics", "Universidade Federal Fluminense", "Rio de Janeiro, Brazil", "Apr. 2013 - Dec. 2017", "Term paper: Modelagem e Previsão da Inflação Anual Efetiva medida pelo IPCA.",) %>% 
+  detailed_entries(degree, dates, uni, loc, details)
+```
+
+Outstanding performance (>90/100): 
+
+- Sources of Information (GET00134)
+- Data Visualization (GET00183) 
+- Applied Statistics (GET00128)
+- Scientific Research Methodology (GET00137)
+- Multivariate Analysis (GET00126)
+- Time Series Analysis (GET00127)
+
+
+
+```{r}
+  tribble(
+  ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
+  "Brazillian Scientific Mobility Program", "University of Wisconsin Platteville", "Wisconsin, United States", "Jun. 2014 - May 2015", "GPA: 3.4/4",
+  "Brazillian Scientific Mobility Program", "University of Wisconsin Platteville", "Wisconsin, United States", "Jun. 2014 - May 2015", "Funding Agency: CAPES Improvement Coordination",
 ) %>% 
   detailed_entries(degree, dates, uni, loc, details)
 ```
 
+
+Outstanding performance (> A-): 
+
+- Global Business (BUSADMIN 1300)
+- Management Accounting (ACCTING 2020)
+- Data Analysis & Decision Mkg (BUSADMIN 2340)
+- Principles of Macroeconomics (ECONOMIC 2130)
+- US Culture (ESL 134)
+- Acad Listening and Note-Taking (ESL 151)
+- Acad Speaking (ESL 152)
+- Special Topics (ESL 155)
+
+\newpage
+
 # Experience
+\vspace{.5cm}
+
+## Research
 ```{r}
 tribble(
   ~ role, ~ company, ~ loc, ~ dates, ~ details,
-  "Research Assistant (Fundação Christiano Ottoni)", "Decision Support and Reliability Lab, LADEC", "School of Engineering-UFMG", "Oct. 2018 - Present", "Supervisors include Marcelo Azevedo Costa and Vinícius Diniz Mayrink", 
-    "Research Assistant (Fundação Christiano Ottoni)", "Decision Support and Reliability Lab, LADEC", "School of Engineering-UFMG", "Oct. 2018 - Present", "Consulting project with Companhia Energética de Minas Gerais, CEMIG", 
-     "Research Assistant (Fundação Christiano Ottoni)", "Decision Support and Reliability Lab, LADEC", "School of Engineering-UFMG", "Oct. 2018 - Present", "Contributing to the development of an open source package to ease Bayesian Structured Equation Modelling via RStan and Shiny",
-   "Research Assistant (Fundação Christiano Ottoni)", "Decision Support and Reliability Lab, LADEC", "School of Engineering-UFMG", "Oct. 2018 - Present", "The project consisted of Computational statistical modeling of the CEMIG-D business model using databases and technical knowledge (P&D D636)",
-      "Research Intern (Fundação Euclides da Cunha)", "Documentation Active & Intelligent Design Laboratory, ADDLABS", "IC-UFF", "Oct. 2017 - Dez. 2017", "Supervisors include Rodrigo Salvador Monteiro and Ludmilla da Silva Viana Jacobson",
-      "Research Intern (Fundação Euclides da Cunha)", "Documentation Active & Intelligent Design Laboratory, ADDLABS", "IC-UFF", "Oct. 2017 - Dez. 2017", "Consulting project with Shell Brasil",
-    "Research Intern (Fundação Euclides da Cunha)", "Documentation Active & Intelligent Design Laboratory, ADDLABS", "IC-UFF", "Oct. 2017 - Dez. 2017", "Contributed with consistency checks, data granularity reduction and time series visualizations of structured in large datasets (17 million).",
-      "Research Intern (Fundação Euclides da Cunha)", "Documentation Active & Intelligent Design Laboratory, ADDLABS", "IC-UFF", "Oct. 2017 - Dez. 2017", "The ADDSSI project aimed to research the use of artificial intelligence techniques to support the diagnosis of flow and pressure control anomalies in a water injection system of a UEP. In addition, it offers a dynamic model of the injection system of an FPSO and allows simulations of the behavior of its equipment and its control loop, comparing the results with the actual measurements loaded directly from the process plant. (ADDSSI)",
-    "Intern", "Planejamento e Pesquisa Ltda, GPP", "Niterói, Rio de Janeiro", "Jan. 2016 - Mar. 2018", "Supervisors include Adriano Von Pfuhl Rodrigues and Francisco Guimarães",
-      "Intern", "Planejamento e Pesquisa Ltda, GPP", "Niterói, Rio de Janeiro", "Jan. 2016 - Mar. 2018", "Consulting with Naturgy Energy Group S.A., ILOS, CASSI, Previ and local politicians",
-  "Intern", "Planejamento e Pesquisa Ltda, GPP", "Niterói, Rio de Janeiro", "Jan. 2016 - Mar. 2018", "Analytics support to electoral and market research, outcome reporting and data consistency supervision",
-  "Volunteer", "Feira Brasileira de Colégios de Aplicação e Escolas Técnicas, VII FEBRAT", "Pedagogical Center-UFMG, ", "October 23, 2019", "Evaluation of the scientific merit of the papers submitted to the event.",
-    "Volunteer", "Feira Brasileira de Colégios de Aplicação e Escolas Técnicas, VII FEBRAT", "Pedagogical Center-UFMG, ", "October 23, 2019", "VII FEBRAT is a scientific fair that promotes the dissemination of works developed by students of Basic Education and Vocational and Technological Education under the guidance of teachers from different areas of knowledge. The theme of the 2019 edition is “Bioeconomics: Diversity and Wealth for Sustainable Development”.",
+    "Research Assistant (Funding Agency: Fundação Christiano Ottoni)", "Decision Support and Reliability Lab, LADEC", "School of Engineering-UFMG", "Oct. 2018 - Feb. 2020", "R&D project with CEMIG-D",
+  "Research Assistant (Funding Agency: Fundação Christiano Ottoni)", "Decision Support and Reliability Lab, LADEC", "School of Engineering-UFMG", "Oct. 2018 - Feb. 2020", "Supervisors include Marcelo Azevedo Costa and Vinícius Diniz Mayrink", 
 ) %>% 
   detailed_entries(role, dates, company, loc, details)
 ```
 
-\newpage
+Contributed to the development of an R package to ease Bayesian Structured Equation Modelling via RStan. The P&D D636 project consisted of Computational statistical modeling of the CEMIG-D business model using databases and technical knowledge.
+
+```{r}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+        "Research Intern (Funding Agency: Fundação Euclides da Cunha)", "Documentation Active & Intelligent Design Laboratory, ADDLABS", "IC-UFF", "Oct. 2017 - Dez. 2017", "R&D project with Shell Brasil",
+      "Research Intern (Funding Agency: Fundação Euclides da Cunha)", "Documentation Active & Intelligent Design Laboratory, ADDLABS", "IC-UFF", "Oct. 2017 - Dez. 2017", "Supervisors include Rodrigo Salvador Monteiro and Ludmilla da Silva Viana Jacobson",) %>% 
+  detailed_entries(role, dates, company, loc, details)
+
+```
+
+Contributed with consistency checks, data granularity reduction and time series visualizations of structured in large datasets (17 million). The ADDSSI project aimed to research the use of artificial intelligence techniques to support the diagnosis of flow and pressure control anomalies in a water injection system of a UEP. 
+
+---
+
+## Professional
+
+```{r}
+tribble(
+  ~ role, ~ company, ~ loc, ~ dates, ~ details,
+    "Intern", "Planejamento e Pesquisa Ltda, GPP", "Niterói, Rio de Janeiro", "Jan. 2016 - Mar. 2018", "Supervisors include Adriano Von Pfuhl Rodrigues and Francisco Guimarães",
+      "Intern", "Planejamento e Pesquisa Ltda, GPP", "Niterói, Rio de Janeiro", "Jan. 2016 - Mar. 2018", "Consulting with Naturgy Energy Group S.A., ILOS, CASSI, Previ and local politicians",) %>% 
+  detailed_entries(role, dates, company, loc, details)
+```
+
+Contributed with analytics support to electoral and market research, outcome reporting and data consistency supervision using SAS programming.
+
+---
+
+## Volunteer work 
+
+- Evaluation of the scientific merit of the presentations: 'Survival Analysis Framework for Early Prediction of Student Abandonment' and 'Data Mining for Direct Marketing: Problems and Solutions' in the seminar discipline of the UFMG Statistics Department.
+
+- Evaluation of the scientific merit of five presentations at VII FEBRAT,  a scientific fair that promotes the dissemination of works developed by students of Basic Education and Vocational and Technological Education.
+
+- Taught two classes in the discipline of introduction to computational statistics of the UFMG Statistics Department. Topic: Jackknife and bootstrap resampling methods.
 
 # Achievements
 ## Certificates and licenses
 ```{r}
 tribble(
   ~ certificate, ~ from, ~ year,
-  "TOEFL iBT (score 96)", "ETS Global", "2019",
   "Accredited Statistician", "CONRE-2", "2018",
-  "Hands on Deep Learning course extension", "DCC-UFMG", "2018",
-  "Rn00bs founder", "Rn00bs", "2018"
+  "Hands on Deep Learning extension", "DCC-UFMG", "2018",
+  "Rn00bs founder", "Rn00bs", "2018",
 ) %>%
   brief_entries(certificate, year, from)
 ```
 
-## Scholarships
+## R packages
+
 ```{r}
 tribble(
   ~ scholarship, ~ from, ~ year,
-  "International experience through one year scholarship granted by Higher Education Improvement Coordination (CAPES) at UWP.", "UWP", "2014",
+  "spsurv", "CRAN R package", "2020",
+  "faStan", "Under review", "2020"
 ) %>%
   brief_entries(scholarship, year, from)
 ```
 
-# Technical Skills
+\newpage
+# Research interests
+
+## Congress contributed papers
+
 ```{r}
-tribble(
-  ~ skill, ~ category,
-  "Analytical", "Statistical Modelling, Bayesian Statistics, Survival Analysis and Structural Equation Modelling",
-  "Programming", "R (advanced), LaTeX (advanced), Stan (advanced), HTML, TOML, CSS, JavaScript, SQL, Python, SAS and MQL",
-  "Python libraries", "Pandas, numpy, Matplotlib and Seaborn, Scikit-learn",
-  "Tools", "Git, RStudio, Jupyter, SAS 9.0, MySQL Workbench and MetaTrader 5"
-) %>%
-  detailed_entries(with = skill, what = category)
+bibliography_entries(file = "pres.bib")
 ```
 
-# Presentations
-```{r}
-tribble(
-  ~ competition, ~ from, ~ year,
-  "Semiparametric Survival Analysis via Bernstein Polynomials", "SER IV", "2019",
-  "Predictive modeling of economic and financial monitoring of The Brazilian Electricity Regulatory Agency (ANEEL)", "CSDS", "2019",
-  "Bernstein Polynomial based Proportional Hazards regression", "WASA", "2019"
+## Submitted articles
 
-) %>%
-  brief_entries(competition, year, from)
-```
+Mayrink VD, Panaro RV and Costa MA. "Structural equation modeling with time dependence: an application comparing Brazilian energy distributors". Submitted in January/2020.
+\newpage
 
-# Papers
-```{r}
-bibliography_entries(file = "ref.bib")
-```
+# References
+
+Fábio Nogueira Demarqui, Ph.D. \
+Statistics Department  \
+Universidade Federal de Minas Gerais, ICEx Pampulha Campus \
+Av. Antônio Carlos 6627 \
+Belo Horizonte, MG 31270-901 \
++55 31-3409-5900 \
+fndemarqui@gmail.com \
+
+Vinícius Diniz Mayrink, Ph.D. \
+Statistics Department  \
+Universidade Federal de Minas Gerais, ICEx Pampulha Campus \
+Av. Antônio Carlos 6627 \
+Belo Horizonte, MG 31270-901 \
++55 31-3409-5900 \
+vdinizm@gmail.com \
+
+
+Adriano Von Pfuhl Rodrigues, Chief Statistician \
+Research Institute Instituto GPP \
+Rua Domingues de Sá, 315C \
+Niterói, RJ 24220-090 \
++55 21-2629-2005 \
+adriano@gpp.com.br \
+
+Ana Beatriz Fonseca, Ph.D. \
+Statistics Department \
+Universidade Federal Fluminense, Mathematics and Statistics Institute \
+Rua Prof. Marcos Waldemar de Freitas Reis Niterói, RJ 24210-201 \
++55 21-2109-1857 \
+abmfonseca@id.uff.br \
+
+Kristin Dalby, ESL Coordinator \
+International Programs Office \
+University of Wisconsin – Madison \
+716 Langdon St #301 \
+Madison, WI 53706 \
++1 608-265-6329 \
+kdalby@wisc.edu \

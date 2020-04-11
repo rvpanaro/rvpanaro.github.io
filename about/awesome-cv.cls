@@ -103,13 +103,13 @@
 %-------------------------------------------------------------------------------
 %% Page Layout
 % Configure page margins with geometry
-\geometry{left=2.0cm, top=1.5cm, right=2.0cm, bottom=2.0cm, footskip=.5cm}
+\geometry{left=1.5cm, top=1.5cm, right=1.0cm, bottom=1.0cm, footskip=0.5cm}
 
 %% Header & Footer
 % Set offset to each header and footer
 \fancyhfoffset{0em}
 % Remove head rule
-\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\headrulewidth}{2pt}
 % Clear all header & footer fields
 \fancyhf{}
 % Enable if you want to make header or footer using fancyhdr
@@ -133,7 +133,7 @@
 \definecolor{blue}{HTML}{6CE0F1}
 % Text colors
 \definecolor{darktext}{HTML}{414141}
-\colorlet{text}{darkgray}
+\colorlet{text}{black}
 \colorlet{graytext}{gray}
 \colorlet{lighttext}{lightgray}
 % Awesome colors
@@ -179,59 +179,59 @@
   BoldItalicFont=*-MediumItalic,
 ]{Roboto}
 
-\newcommand*{\footerfont}{\sourcesanspro}
-\newcommand*{\bodyfont}{\sourcesanspro}
-\newcommand*{\bodyfontlight}{\sourcesansprolight}
+\newcommand*{\footerfont}{\normalfont}
+\newcommand*{\bodyfont}{\normalfont}
+\newcommand*{\bodyfontlight}{\normalfont}
 
 %-------------------------------------------------------------------------------
 %                Configuration for styles
 %-------------------------------------------------------------------------------
 % Configure styles for each CV elements
 % For fundamental structures
-\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{25pt}{1em}\headerfontlight\color{darktext} #1}}
-\newcommand*{\headerlastnamestyle}[1]{{\fontsize{25pt}{1em}\headerfont\bfseries\color{text} #1}}
-\newcommand*{\headerpositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\scshape\color{awesome} #1}}
-\newcommand*{\headeraddressstyle}[1]{{\fontsize{9pt}{1em}\headerfont\itshape\color{lighttext} #1}}
-\newcommand*{\headersocialstyle}[1]{{\fontsize{9pt}{1em}\headerfont\color{text} #1}}
-\newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
-\newcommand*{\footerstyle}[1]{{\fontsize{9pt}{1em}\footerfont\scshape\color{lighttext} #1}}
-\newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
-\newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
-\newcommand*{\paragraphstyle}{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text}}
+\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{20pt}{1em}\headerfont\color{awesome-darknight} #1}}
+\newcommand*{\headerlastnamestyle}[1]{{\fontsize{20pt}{1em}\headerfont\bfseries\color{awesome-darknight} #1}}
+\newcommand*{\headerpositionstyle}[1]{{\fontsize{18pt}{1em}\bodyfont\scshape\color{awesome-darknight} #1}}
+\newcommand*{\headeraddressstyle}[1]{{\fontsize{9pt}{1em}\headerfont\itshape\color{awesome-darknight} #1}}
+\newcommand*{\headersocialstyle}[1]{{\fontsize{9pt}{1em}\headerfont\color{awesome-darknight} #1}}
+\newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{awesome-darknight} #1}}
+\newcommand*{\footerstyle}[1]{{\fontsize{9pt}{1em}\footerfont\scshape\color{awesome-darknight} #1}}
+\newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\color{awesome-darknight}\@sectioncolor #1}}
+\newcommand*{\subsectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\scshape\textcolor{awesome-darknight}{#1}}}
+\newcommand*{\paragraphstyle}{\fontsize{12pt}{1em}\bodyfontlight\upshape\color{awesome-darknight}}
 
 % For elements of entry
-\newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\entrypositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\scshape\color{darktext} #1}}
-\newcommand*{\entrydatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{darktext} #1}}
-\newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
-\newcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+\newcommand*{\entrytitlestyle}[1]{{\fontsize{12pt}{1em}\bodyfont\bfseries\color{awesome-darknight} #1}}
+\newcommand*{\entrypositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\scshape\color{awesome-darknight} #1}}
+\newcommand*{\entrydatestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\slshape\color{awesome-darknight} #1}}
+\newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\slshape\color{awesome-darknight} #1}}
+\newcommand*{\descriptionstyle}[1]{{\fontsize{11pt}{1em}\bodyfont\upshape\color{awesome-darknight} #1}}
 
 % For elements of subentry
-\newcommand*{\subentrytitlestyle}[1]{{\fontsize{8pt}{1em}\bodyfont\mdseries\color{darktext} #1}}
-\newcommand*{\subentrypositionstyle}[1]{{\fontsize{7pt}{1em}\bodyfont\scshape\color{darktext} #1}}
-\newcommand*{\subentrydatestyle}[1]{{\fontsize{7pt}{1em}\bodyfontlight\slshape\color{darktext} #1}}
-\newcommand*{\subentrylocationstyle}[1]{{\fontsize{7pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
-\newcommand*{\subdescriptionstyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+\newcommand*{\subentrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\mdseries\color{awesome-darknight} #1}}
+\newcommand*{\subentrypositionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\scshape\color{awesome-darknight} #1}}
+\newcommand*{\subentrydatestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\slshape\color{awesome-darknight} #1}}
+\newcommand*{\subentrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\slshape\color{awesome} #1}}
+\newcommand*{\subdescriptionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\upshape\color{awesome-darknight} #1}}
 
 % For elements of honor
-\newcommand*{\honortitlestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{darktext} #1}}
-\newcommand*{\honorpositionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\honordatestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{darktext} #1}}
-\newcommand*{\honorlocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
+\newcommand*{\honortitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\color{awesome-darknight} #1}}
+\newcommand*{\honorpositionstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{awesome-darknight} #1}}
+\newcommand*{\honordatestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\color{awesome-darknight} #1}}
+\newcommand*{\honorlocationstyle}[1]{{\fontsize{10pt}{1em}\bodyfont\slshape\color{awesome-darknight} #1}}
 
 % For elements of skill
-\newcommand*{\skilltypestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\skillsetstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\color{text} #1}}
+\newcommand*{\skilltypestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{awesome-darknight} #1}}
+\newcommand*{\skillsetstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{awesome-darknight} #1}}
 
 % For elements of the cover letter
-\newcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
-\newcommand*{\recipientaddressstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\scshape\color{darktext} #1}}
-\newcommand*{\recipienttitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\lettertitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\bfseries\color{darktext} \underline{#1}}}
-\newcommand*{\letterdatestyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{darktext} #1}}
-\newcommand*{\lettertextstyle}{\fontsize{10pt}{1.4em}\bodyfontlight\upshape\color{darktext}}
-\newcommand*{\letternamestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\letterenclosurestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{lighttext} #1}}
+\newcommand*{\lettersectionstyle}[1]{{\fontsize{14pt}{1em}\bodyfont\bfseries\color{awesome-darknight}\@sectioncolor #1}}
+\newcommand*{\recipientaddressstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\scshape\color{awesome-darknight} #1}}
+\newcommand*{\recipienttitlestyle}[1]{{\fontsize{11pt}{1em}\bodyfont\bfseries\color{awesome-darknight} #1}}
+\newcommand*{\lettertitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\bfseries\color{awesome-darknight} \underline{#1}}}
+\newcommand*{\letterdatestyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{awesome-darknight} #1}}
+\newcommand*{\lettertextstyle}{\fontsize{10pt}{1.4em}\bodyfontlight\upshape\color{awesome-darknight}}
+\newcommand*{\letternamestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{awesome-darknight} #1}}
+\newcommand*{\letterenclosurestyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{awesome-darknight} #1}}
 
 
 %-------------------------------------------------------------------------------
@@ -536,7 +536,7 @@
 	\vspace{\acvSectionTopSkip}
 	\sectionstyle{#1}
 	\phantomsection
-	\color{gray}\vhrulefill{0.9pt}
+	\color{black}\vhrulefill{0.9pt}
 }
 
 % Define a subsection for CV
@@ -668,7 +668,7 @@
   \par\addvspace{2.5ex}
   \phantomsection{}
   \lettersectionstyle{#1}
-  \color{gray}\vhrulefill{0.9pt}
+  \color{black}\vhrulefill{0.9pt}
   \par\nobreak\addvspace{0.4ex}
 }
 
