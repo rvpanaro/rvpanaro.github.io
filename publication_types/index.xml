@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Publication_types | rvpanaro</title>
+    <title>Publication_types on rn00bs</title>
     <link>/publication_types/</link>
-      <atom:link href="/publication_types/index.xml" rel="self" type="application/rss+xml" />
-    <description>Publication_types</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright>
-    <image>
-      <url>/img/icon-192.png</url>
-      <title>Publication_types</title>
-      <link>/publication_types/</link>
-    </image>
+    <description>Recent content in Publication_types on rn00bs</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2020</copyright>
+    
+	    <atom:link href="/publication_types/index.xml" rel="self" type="application/rss+xml" />
+    
     
   </channel>
 </rss>

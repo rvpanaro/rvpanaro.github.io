@@ -1,0 +1,133 @@
+---
+title: "Intro ao Bootstrap"
+authors: ["renato", "rumenick"]
+subtitle: |
+  Introdução a técnicas de reamostragem computacionalmente intensivas.
+summary: "Aprenda Bootstrap em 5 minutos!"
+date: 2019-05-15T21:13:14-05:00
+categories: ["EstatComp"]
+tags: [bootstrap, R, estatística, não-paramétrica, computacional, reamostragem, pt]
+output: md_document
+bibliography: references.bib
+image:
+  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/x-agyuDQHJA)'
+#url_code: "jackknife.R"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+<style>
+body {
+text-align: justify}
+</style>
+
+# O que é?
+
+O Bootstrap foi uma das primeiras técnicas estatísticas intensivas de reamostragem para computar a variância de um conjunto de dados estatísticos, construir intervalos de confiança e realizar testes de hipóteses sobre parâmetros de interesse, esse método foi introduzido pelo estatístico estadunidense Bradley Efron em 1979. Efron seguiu o espírito de Tuckey para nomear a técnica (veja o [post](/post/jackknife) sobre jackknife).
+
+*Bootstrap methods: another look at the jackknife*, @Efron:1979.
+ 
+# De onde vem o termo Bootstrap?
+
+Em inglês, bootstrap é sinônimo de alça da bota, logo, remete a algo que precisa ser alavancado por esforço próprio. A forma abreviada “boot” é muito popular quando usada para referir-se aos comandos iniciais necessários para carregar o sistema operacional do computador, Oxford (2014). Porém, segundo Scholz (2007), a motivação foi fazer uma analogia ao ato de puxar a si mesmo e seu cavalo para fora de um atoleiro, como na ficção **As Aventuras do Barão Munchausen**. O detalhe é que na ficção o Barão usa como recurso o seu próprio rabo de cavalo e não a alça da bota, no entanto, essa versão para a motivação de Efron ganhou força após tradução do artigo de Diaconis and Efron (1983) para alemão em que o uso da expressão “die M¨unchhausen Methode” é feito pelos autores.
+
+![Figura: Capa do Livro **Aventuras do Barão Munchausen**.](gallery/baron.jpg)
+
+# Qual é a ideia do método?
+
+Em estatística, os métodos de bootstrap são uma classe de métodos que estimam a distribuição de uma população por reamostragem. A amostra observada é tratada como uma população e amostras aleatórias com reposição são geradas (reamostradas) a partir dela. Com o bootstrap ou bootstrapping é possível estudar características da população a partir dessa pseudo-população e extrair inferências.
+
+![Figura: Representação do Bootstrap com 3 “reamostras” de tamanho 5.](gallery/bootstrapping.png)
+
+- A amostra Bootstrap é do mesmo tamanho (n = 5) da amostra original (pode ser maior ou menor).
+
+- Cada amostra Boostrap nada mais é do que uma reamostra, ou seja, uma amostragem simples com reposição feita a partir da amostra original.
+
+- O fato de ser com reposição significa que o valor é reposto ao conjunto de possíveis valores de retirada.
+
+- B é o número arbitrário de réplicas (número de reamostras) bootstrap.
+
+
+# Como e por que funciona?
+Vimos que os métodos de reamostragem como Jackknife e Bootstrap se baseiam em reamostras de uma amostra proveniente da população alvo em estudo. No caso do Bootstrap, $\mathbf{x}=(x_1, \dots,x_n)$ é uma amostra aleatória (a.a.) com reposição observada de uma distribuição populacional desconhecida $F_X$.  
+
+Logo, seja $X^∗$ a variável aleatória que representa da seleção de uma observação aleatoriamente de $\mathbf{x}$, então
+$$p=P(X^∗=x_i)=\frac{1}{n},~i=1,\dots,n$$.
+
+Observe que $X^*$ segue distribuição uniforme discreta no conjunto $\{x_1,\dots,x_n\}$. Portanto, neste caso, reamostrar B vezes é equivale a gerar B amostras bootstrap de tamanho $m$ com variáveis independentes e identicamente distribuídas (i.i.d.) $$\mathbf{X^*} = (X^*_1,X^*_2,\dots,X^*_m), \text{ com }X^* \sim Unif\{x_1,\dots,x_n\}.$$
+
+**Exemplo 7.1 @Rizzo:2007**: Suponha 
+Suponha $\mathbf{x}={2,2,1,1,5,4,4,3,1,2}$ uma a.a. observada de tamanho 10. Note que, dada amostra aleatória $\mathbf{x}$
+, há 5 valores possíveis para formar uma reamostra 
+$X^∗$ de $\mathbf{x}$ com probabilidades:
+
+$$P(X=k)=
+\begin{cases}
+0,3; \text{ se } k=1\\
+0,3; \text{ se } k=2\\
+0,1; \text{ se } k=3\\
+0,2; \text{ se } k=4\\
+0,1; \text{ se } k=5\\
+\end{cases}$$
+
+
+Note que cada elemento pertencente ao conjunto $\{2,2,1,1,5,4,4,3,1,2\}$ tem probabilidade de retirada $p=1/10$, logo, as probabilidades são somadas a medida que os valores se repetem nesse conjunto.
+
+Visualização no R:
+```{r}
+x <- c(2,2,1,1,5,4,4,3,1,2)
+n <- length(x)
+barplot(table(x)/n, bty = "n", ylab = expression(P(X == k)),
+        xlab = expression(k), col = "darkblue")
+```
+
+Perceba que a distribuição acumulada $F_X^∗$ da amostra bootstrap com a distribuição empírica que pode ser usada como uma aproximação de $F_X$.
+
+Lembre que $F_n$ é uma distribuição discreta com pesos iguais para cada ponto amostral, $F_n$ é definida como uma proporção amostral $F_n(t)=\sum\limits_{i=1}^n \#\{x_i \le t\}I_{(x_i \le t)}$.
+
+
+
+
+
+$$
+F_n(k)=F_X^∗(k)=\begin{cases}
+0; \text{ se }  k<1 \\
+0,3; \text{ se }  1 \le k < 2 \\
+0,6; \text{ se } 2 \le k<3 \\
+0,7; \text{ se } 3 \le k<4 \\
+0,9; \text{ se } 4 \le k<5 \\
+1; \le k≥5. \\
+\end{cases}$$
+
+Com auxílio do R é possível visualizar que as duas distribuições de fato coincidem coincidem, logo, reamostrar de $x$ equivale a gerar valores da distribuição $F_n(x)$.
+
+```{r}
+par(mfrow = c(1,2))
+barplot(c(c('0'=0), cumsum(table(x)/n)), bty = "n", 
+        main = "Dist. Acumulada", ylab = paste0(expression(F[X]),'*' ,expression((k))),
+        xlab = expression(x[i]), col = "darkblue")
+
+plot(ecdf(x), main = "Dist. Empírica", bty= "n", ylab = expression(F[n](k)))
+```
+
+
+Segundo @Rizzo:2007, há duas grandes suposições no método bootstrap.
+
+- A função de distribuição empírica $F_n$ é uma boa aproximação para $F_X$, então a distribuição do estimador bootstrap $\hat \theta^*$ é similar à distribuição desconhecida do estimador proposto originalmente $\hat \theta$.
+
+- A distribuição empírica das réplicas bootstrap é uma boa aproximação para $F_n$.
+
+Portanto, a tarefa de fazer inferências sobre $\theta$ se reduz a aprender sobre a distribuição bootstrap de $\hat\theta^*$. Logo, para cada amostra bootstrap indexada por $b=1,\dots,B$, calcula-se $\hat\theta^{*(b)}$ e a estimativa bootstrap da distribuição do estimador $F_{\hat\theta}(.)$ é a distribuição empírica das réplicas 
+$\hat\theta^{*(1)},\dots,\hat\theta^{*(B)}$.
+
+A amostra acima é na verdade uma amostra de uma $Poisson(2)$. Um grande número de réplicas produz uma boa estimativa de $F_n$, mas não uma boa estimativa de $F_X$. A violação da segunda suposição ocorre porque independente do número de réplicas, as amostras de bootstrap nunca incluirão o valor zero, @Rizzo:2007. 
+ 
+# Conclusão
+ A distribuição da população finita representada pela amostra pode ser considerada uma pseudo-população com características semelhantes às da verdadeira população. Mais do que isso, aprendemos que através da geração repetida de amostras aleatórias desta pseudo-população (reamostragem), a distribuição amostral de uma estatística pode ser estimada. Logo, as estimativas de bootstrap de uma distribuição de amostragem são análogas à ideia de estimativa de densidade. Saiba que há diversas aplicações avançadas do Bootstrap, as propriedades de um estimador como viés ou erro padrão, por exemplo, podem ser estimadas por métodos de reamostragem.
+
+> “The bootstrap is rarely the star of statistics, but it is the best supporting actor”, Bradley Efron.
+
+
+# Referências

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Modelagem on rn00bs</title>
+    <link>/pt/tags/modelagem/</link>
+    <description>Recent content in Modelagem on rn00bs</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
+    <language>pt-br</language>
+    <copyright>&amp;copy; 2020</copyright>
+    <lastBuildDate>Sun, 04 Aug 2019 21:13:14 -0500</lastBuildDate>
+    
+	    <atom:link href="/pt/tags/modelagem/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>O que é Decision Modelling?</title>
+      <link>/pt/post/modelling/</link>
+      <pubDate>Sun, 04 Aug 2019 21:13:14 -0500</pubDate>
+      
+      <guid>/pt/post/modelling/</guid>
+      <description>
+
+
+&lt;style&gt;
+body {
+text-align: justify}
+&lt;/style&gt;
+&lt;div id=&#34;por-que-modelar&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Por que modelar?&lt;/h1&gt;
+&lt;p&gt;E se um endocrinologista especializado em diabetes pudesse dizer se é provável que o paciente tenha ou não diabetes, baseado apenas na idade e no consumo de açúcar dele? Já pensou como isso poderia reduzir os custos do paciente, do plano de saúde e até mesmo do Sistema Único de Saúde (SUS)?&lt;/p&gt;
+&lt;p&gt;Somente em 2015 houveram cerca de 1,4 bilhões de consultas médicas. Se em &lt;span class=&#34;math inline&#34;&gt;\(2\%\)&lt;/span&gt; dessas consultas médicas for solicitado algum tipo de exame laboratorial para diabetes seriam gastos cerca de pelo menos 28 milhões de reais apenas com exames, supondo que cada exame custe no mínimo 1 real. Porém, se tivermos um modelo de classificação como o do exemplo acima, o sistema economizaria com pacientes que provavelmente não são diabéticos e alocaria o valor referente ao custo dos exames para a construção de novas unidades de atendimento.&lt;/p&gt;
+&lt;p&gt;Ok, então vamos seguir com esse exemplo. Suponha foi medida a Quantidade diária de Açúcar Consumido (X1) e a idade (X2) de cada paciente atendido.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;gallery/dispersao.jpg&#34; alt=&#34;Figura: Gráfico de dispersão da Quantidade de Açúcar (X1) pela Idade (X2).&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figura: Gráfico de dispersão da Quantidade de Açúcar (X1) pela Idade (X2).&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Observamos um certo padrão com relação aos pacientes que então foram diagnosticados diabéticos (vermelho) e os que foram classificados como não diabéticos (preto). Note a presença de uma região em que só há pacientes diabéticos e a de outra onde só estão presentes os pacientes saudáveis.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;o-que-é-um-modelo-de-decisão&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;O que é um Modelo de Decisão?&lt;/h1&gt;
+&lt;p&gt;Criar um modelo nada mais é do que propor uma fórmula matemática para delimitar essas duas regiões baseada em dados observados, ou seja, uma técnica que permita determinar uma curva/superfície, onde, abaixo dela estão os pacientes saudáveis e acima dela os pacientes estão os diabéticos, de acordo com X1 e X2.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;gallery/decisao.jpg&#34; alt=&#34;Figura: Exemplo de Modelo de Decisão.&#34; /&gt;
+&lt;p class=&#34;caption&#34;&gt;Figura: Exemplo de Modelo de Decisão.&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;Agora que você já entendeu um pouco sobre o que é modelagem e porque modelar, vamos ao que interessa! Quais métodos você pode usar para criar modelos de decisão? Atualmente existem vários, como por exemplo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Perceptron&lt;/li&gt;
+&lt;li&gt;Modelo Logístico&lt;/li&gt;
+&lt;li&gt;Árvore de Decisão&lt;/li&gt;
+&lt;li&gt;Support Vector Machine (SVM)&lt;/li&gt;
+&lt;li&gt;Naive Bayes&lt;/li&gt;
+&lt;li&gt;K-Nearest Neighbours&lt;/li&gt;
+&lt;li&gt;Análise de Discriminante&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Sendo assim, um modelo de decisão nada mais é do que uma forma de representar a realidade. Mais precisamente, um modelo refere-se a alguma forma de representação simbólica de nossas suposições sobre a realidade, &lt;span class=&#34;citation&#34;&gt;Mayag (n.d.)&lt;/span&gt;. Nesse exemplo, a linha preta, que separa os pacientes diabéticos dos saudáveis, é chamada de superfície/curva de decisão. Até a próxima!&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;referências&#34; class=&#34;section level1 unnumbered&#34;&gt;
+&lt;h1&gt;Referências&lt;/h1&gt;
+&lt;div id=&#34;refs&#34; class=&#34;references&#34;&gt;
+&lt;div id=&#34;ref-Mayag&#34;&gt;
+&lt;p&gt;Mayag, B. n.d. “Introduction to Decision Modeling.” &lt;em&gt;University Paris Dauphine&lt;/em&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
