@@ -1,140 +1,174 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on rn00bs</title>
+    <title>Tags | rvpanaro</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on rn00bs</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2020</copyright>
-    <lastBuildDate>Sun, 04 Aug 2019 21:13:14 -0500</lastBuildDate>
-    
-	    <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
-    
+      <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    <description>Tags</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Mon, 18 Nov 2019 09:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Tags</title>
+      <link>/tags/</link>
+    </image>
     
     <item>
-      <title>Decisão</title>
-      <link>/tags/decisao/</link>
-      <pubDate>Sun, 04 Aug 2019 21:13:14 -0500</pubDate>
-      
-      <guid>/tags/decisao/</guid>
+      <title>Autoencoder</title>
+      <link>/tags/autoencoder/</link>
+      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/tags/autoencoder/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Modelagem</title>
-      <link>/tags/modelagem/</link>
-      <pubDate>Sun, 04 Aug 2019 21:13:14 -0500</pubDate>
-      
-      <guid>/tags/modelagem/</guid>
+      <title>Bayesian Inference</title>
+      <link>/tags/bayesian-inference/</link>
+      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/tags/bayesian-inference/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>R</title>
-      <link>/tags/r/</link>
-      <pubDate>Sun, 04 Aug 2019 21:13:14 -0500</pubDate>
-      
-      <guid>/tags/r/</guid>
+      <title>Principal Component Analysis Regression</title>
+      <link>/tags/principal-component-analysis-regression/</link>
+      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/tags/principal-component-analysis-regression/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>S</title>
-      <link>/tags/s/</link>
-      <pubDate>Sun, 04 Aug 2019 21:13:14 -0500</pubDate>
-      
-      <guid>/tags/s/</guid>
+      <title>Regression tree</title>
+      <link>/tags/regression-tree/</link>
+      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/tags/regression-tree/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>curiosidades</title>
-      <link>/tags/curiosidades/</link>
-      <pubDate>Sun, 04 Aug 2019 21:13:14 -0500</pubDate>
-      
-      <guid>/tags/curiosidades/</guid>
+      <title>Structural Equation Models</title>
+      <link>/tags/structural-equation-models/</link>
+      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/tags/structural-equation-models/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>pt</title>
-      <link>/tags/pt/</link>
-      <pubDate>Sun, 04 Aug 2019 21:13:14 -0500</pubDate>
-      
-      <guid>/tags/pt/</guid>
+      <title>Box-Jenkins</title>
+      <link>/tags/box-jenkins/</link>
+      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
+      <guid>/tags/box-jenkins/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>computacional</title>
-      <link>/tags/computacional/</link>
-      <pubDate>Tue, 14 May 2019 21:13:14 -0500</pubDate>
-      
-      <guid>/tags/computacional/</guid>
+      <title>Dynamic Linear Model</title>
+      <link>/tags/dynamic-linear-model/</link>
+      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
+      <guid>/tags/dynamic-linear-model/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>estatística</title>
-      <link>/tags/estatistica/</link>
-      <pubDate>Tue, 14 May 2019 21:13:14 -0500</pubDate>
-      
-      <guid>/tags/estatistica/</guid>
+      <title>IPCA</title>
+      <link>/tags/ipca/</link>
+      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
+      <guid>/tags/ipca/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>intro</title>
-      <link>/tags/intro/</link>
-      <pubDate>Tue, 14 May 2019 21:13:14 -0500</pubDate>
-      
-      <guid>/tags/intro/</guid>
+      <title>SARIMA</title>
+      <link>/tags/sarima/</link>
+      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
+      <guid>/tags/sarima/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>jackknife</title>
-      <link>/tags/jackknife/</link>
-      <pubDate>Tue, 14 May 2019 21:13:14 -0500</pubDate>
-      
-      <guid>/tags/jackknife/</guid>
+      <title>Time Series</title>
+      <link>/tags/time-series/</link>
+      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
+      <guid>/tags/time-series/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>reamostragem</title>
-      <link>/tags/reamostragem/</link>
-      <pubDate>Tue, 14 May 2019 21:13:14 -0500</pubDate>
-      
-      <guid>/tags/reamostragem/</guid>
+      <title>inflation</title>
+      <link>/tags/inflation/</link>
+      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
+      <guid>/tags/inflation/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Epidemiologia</title>
-      <link>/tags/epidemiologia/</link>
-      <pubDate>Tue, 26 Mar 2019 14:00:00 +0000</pubDate>
-      
-      <guid>/tags/epidemiologia/</guid>
+      <title>Machine Learning</title>
+      <link>/tags/machine-learning/</link>
+      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
+      <guid>/tags/machine-learning/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Planejamento de Experimentos</title>
-      <link>/tags/planejamento-de-experimentos/</link>
-      <pubDate>Tue, 26 Mar 2019 14:00:00 +0000</pubDate>
-      
-      <guid>/tags/planejamento-de-experimentos/</guid>
+      <title>Rstan</title>
+      <link>/tags/rstan/</link>
+      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
+      <guid>/tags/rstan/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>USP</title>
-      <link>/tags/usp/</link>
-      <pubDate>Tue, 26 Mar 2019 14:00:00 +0000</pubDate>
-      
-      <guid>/tags/usp/</guid>
+      <title>bernstein polynomial</title>
+      <link>/tags/bernstein-polynomial/</link>
+      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
+      <guid>/tags/bernstein-polynomial/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>classification</title>
+      <link>/tags/classification/</link>
+      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
+      <guid>/tags/classification/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ensemble</title>
+      <link>/tags/ensemble/</link>
+      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
+      <guid>/tags/ensemble/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>survival</title>
+      <link>/tags/survival/</link>
+      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
+      <guid>/tags/survival/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>piecewise regression</title>
+      <link>/tags/piecewise-regression/</link>
+      <pubDate>Thu, 23 May 2019 08:30:00 +0000</pubDate>
+      <guid>/tags/piecewise-regression/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>segmented</title>
+      <link>/tags/segmented/</link>
+      <pubDate>Thu, 23 May 2019 08:30:00 +0000</pubDate>
+      <guid>/tags/segmented/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Energy Market</title>
+      <link>/tags/energy-market/</link>
+      <pubDate>Thu, 28 Feb 2019 09:00:00 +0000</pubDate>
+      <guid>/tags/energy-market/</guid>
       <description></description>
     </item>
     

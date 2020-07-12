@@ -1,44 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Authors on rn00bs</title>
+    <title>Authors | rvpanaro</title>
     <link>/authors/</link>
-    <description>Recent content in Authors on rn00bs</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2020</copyright>
-    <lastBuildDate>Sun, 04 Aug 2019 21:13:14 -0500</lastBuildDate>
-    
-	    <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title></title>
-      <link>/authors/renato/</link>
-      <pubDate>Sun, 04 Aug 2019 21:13:14 -0500</pubDate>
-      
-      <guid>/authors/renato/</guid>
-      <description>&lt;p&gt;Panaro is an accredited statistician currently enrolled in the PhD program in Statistics at the University of São Paulo. Passionate about data-driven decision, extreme traveler, night programmer and game player. Has expertise in univariate statistical inference, structural equation models, survival regression models and development of R packages.&lt;/p&gt;
-</description>
-    </item>
+      <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
+    <description>Authors</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Authors</title>
+      <link>/authors/</link>
+    </image>
     
     <item>
       <title></title>
-      <link>/authors/silvio/</link>
-      <pubDate>Sun, 04 Aug 2019 21:13:14 -0500</pubDate>
-      
-      <guid>/authors/silvio/</guid>
-      <description>&lt;p&gt;Silvio Cabral has experience in the areas of probability and statistics, regression analysis, machine learning, neural networks and deep learning. Currently, his main projects involve problems with the classification and segmentation of images and music, using machine learning techniques.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/authors/rumenick/</link>
-      <pubDate>Wed, 15 May 2019 21:13:14 -0500</pubDate>
-      
-      <guid>/authors/rumenick/</guid>
-      <description>&lt;p&gt;Statistician, said classic of birth and Bayesian for convenience, has dedicated himself to simplifying the teaching of statistical science, R and related topics for diverse audiences.  Expert on teaching statistical reasoning used in conclusions or data-based applications. Currently, he lives a trilemma, of how to divide the time to finish his articles, to teach biostatistics for future pharmacists and to manage consultancy activities. Remembering that we  still have Rn00bs. :D&lt;/p&gt;
+      <link>/authors/admin/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/authors/admin/</guid>
+      <description>&lt;p&gt;Panaro is an accredited statistician currently enrolled in the PhD program in Statistics at the University of São Paulo. Passionate about data-driven decision, extreme traveler, night programmer and video game addict.&lt;/p&gt;
 </description>
     </item>
     
