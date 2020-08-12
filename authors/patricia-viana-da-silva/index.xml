@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Patrícia Viana da Silva | rvpanaro</title>
+    <link>/authors/patricia-viana-da-silva/</link>
+      <atom:link href="/authors/patricia-viana-da-silva/index.xml" rel="self" type="application/rss+xml" />
+    <description>Patrícia Viana da Silva</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Mon, 18 Nov 2019 09:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Patrícia Viana da Silva</title>
+      <link>/authors/patricia-viana-da-silva/</link>
+    </image>
+    
+    <item>
+      <title>CHANGE POINT ESTIMATION IN SEGMENTED REGRESSION MODEL USING RSTAN</title>
+      <link>/publication/ser2019/</link>
+      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/publication/ser2019/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

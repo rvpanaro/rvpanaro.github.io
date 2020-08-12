@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Latent | rvpanaro</title>
+    <link>/tags/latent/</link>
+      <atom:link href="/tags/latent/index.xml" rel="self" type="application/rss+xml" />
+    <description>Latent</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Tue, 11 Aug 2020 10:58:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Latent</title>
+      <link>/tags/latent/</link>
+    </image>
+    
+    <item>
+      <title>bsem</title>
+      <link>/project/bsem/</link>
+      <pubDate>Tue, 11 Aug 2020 10:58:00 +0000</pubDate>
+      <guid>/project/bsem/</guid>
+      <description>&lt;p&gt;Flexible routines to allow structural equation modeling particular cases using &amp;lsquo;rstan&amp;rsquo; integration. &amp;lsquo;bsem&amp;rsquo; includes Bayesian semi Confirmatory Factor Analysis, Confirmatory Factor Analysis, and Structural Equation Model.  VD Mayrink (2013) &lt;a href=&#34;doi:10.1214/12-AOAS607&#34; target=&#34;_blank&#34;&gt;doi:10.1214/12-AOAS607&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

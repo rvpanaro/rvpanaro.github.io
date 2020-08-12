@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | rvpanaro</title>
+    <link>/project/</link>
+      <atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Tue, 11 Aug 2020 11:09:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Projects</title>
+      <link>/project/</link>
+    </image>
+    
+    <item>
+      <title>mourafinder</title>
+      <link>/project/mourafinder/</link>
+      <pubDate>Tue, 11 Aug 2020 11:09:00 +0000</pubDate>
+      <guid>/project/mourafinder/</guid>
+      <description>&lt;p&gt;Shiny application aimed at simple visual queries and redirection to other digital platforms.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>bsem</title>
+      <link>/project/bsem/</link>
+      <pubDate>Tue, 11 Aug 2020 10:58:00 +0000</pubDate>
+      <guid>/project/bsem/</guid>
+      <description>&lt;p&gt;Flexible routines to allow structural equation modeling particular cases using &amp;lsquo;rstan&amp;rsquo; integration. &amp;lsquo;bsem&amp;rsquo; includes Bayesian semi Confirmatory Factor Analysis, Confirmatory Factor Analysis, and Structural Equation Model.  VD Mayrink (2013) &lt;a href=&#34;doi:10.1214/12-AOAS607&#34; target=&#34;_blank&#34;&gt;doi:10.1214/12-AOAS607&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>spsurv</title>
+      <link>/project/spsurv/</link>
+      <pubDate>Tue, 11 Aug 2020 10:58:00 +0000</pubDate>
+      <guid>/project/spsurv/</guid>
+      <description>&lt;p&gt;A set of reliable routines to ease semiparametric survival regression modeling based on Bernstein polynomials. &amp;lsquo;spsurv&amp;rsquo; includes proportional hazards, proportional odds and accelerated failure time frameworks for right-censored data. RV Panaro (2020) &lt;a href=&#34;arXiv:2003.10548&#34; target=&#34;_blank&#34;&gt;arXiv:2003.10548&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rn00bs</title>
+      <link>/project/rn00bs/</link>
+      <pubDate>Tue, 11 Aug 2020 10:48:00 +0000</pubDate>
+      <guid>/project/rn00bs/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

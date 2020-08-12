@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>segmented | rvpanaro</title>
+    <title>Segmented | rvpanaro</title>
     <link>/tags/segmented/</link>
       <atom:link href="/tags/segmented/index.xml" rel="self" type="application/rss+xml" />
-    <description>segmented</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Thu, 23 May 2019 08:30:00 +0000</lastBuildDate>
+    <description>Segmented</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Mon, 18 Nov 2019 09:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
-      <title>segmented</title>
+      <title>Segmented</title>
       <link>/tags/segmented/</link>
     </image>
     
     <item>
       <title>CHANGE POINT ESTIMATION IN SEGMENTED REGRESSION MODEL USING RSTAN</title>
-      <link>/talk/segmented/</link>
-      <pubDate>Thu, 23 May 2019 08:30:00 +0000</pubDate>
-      <guid>/talk/segmented/</guid>
+      <link>/publication/ser2019/</link>
+      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/publication/ser2019/</guid>
       <description></description>
     </item>
     

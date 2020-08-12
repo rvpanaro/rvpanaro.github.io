@@ -1,16 +1,33 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>survival | rvpanaro</title>
+    <title>Survival | rvpanaro</title>
     <link>/tags/survival/</link>
       <atom:link href="/tags/survival/index.xml" rel="self" type="application/rss+xml" />
-    <description>survival</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Thu, 23 May 2019 11:30:00 +0000</lastBuildDate>
+    <description>Survival</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Tue, 18 Aug 2020 09:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
-      <title>survival</title>
+      <title>Survival</title>
       <link>/tags/survival/</link>
     </image>
+    
+    <item>
+      <title>spsurv: An R package for semi-parametricsurvival analysis</title>
+      <link>/publication/maters/</link>
+      <pubDate>Tue, 18 Aug 2020 09:00:00 +0000</pubDate>
+      <guid>/publication/maters/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spsurv</title>
+      <link>/project/spsurv/</link>
+      <pubDate>Tue, 11 Aug 2020 10:58:00 +0000</pubDate>
+      <guid>/project/spsurv/</guid>
+      <description>&lt;p&gt;A set of reliable routines to ease semiparametric survival regression modeling based on Bernstein polynomials. &amp;lsquo;spsurv&amp;rsquo; includes proportional hazards, proportional odds and accelerated failure time frameworks for right-censored data. RV Panaro (2020) &lt;a href=&#34;arXiv:2003.10548&#34; target=&#34;_blank&#34;&gt;arXiv:2003.10548&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>SEMIPARAMETRIC SURVIVAL ANALYSIS VIA BERNSTEIN POLYNOMIALS</title>

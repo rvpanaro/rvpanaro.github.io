@@ -3,8 +3,169 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/publication_types/2/</loc>
+    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/publication_types/3/</loc>
+    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/</loc>
+    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/bayesian/</loc>
+    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/fabio-demarqui/</loc>
+    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/marcelo-azevedo/</loc>
+    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/publication_types/</loc>
+    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/publication/</loc>
+    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/regression/</loc>
+    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/renato-panaro/</loc>
+    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/sem/</loc>
+    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/publication/atsa2020/</loc>
+    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/survival/</loc>
+    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/vinicius-mayrink/</loc>
+    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/publication/maters/</loc>
+    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/exploratory/</loc>
+    <lastmod>2020-08-11T11:09:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/project/</loc>
+    <lastmod>2020-08-11T11:09:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/spatial/</loc>
+    <lastmod>2020-08-11T11:09:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/project/mourafinder/</loc>
+    <lastmod>2020-08-11T11:09:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/latent/</loc>
+    <lastmod>2020-08-11T10:58:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/project/bsem/</loc>
+    <lastmod>2020-08-11T10:58:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/project/spsurv/</loc>
+    <lastmod>2020-08-11T10:58:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/blog/</loc>
+    <lastmod>2020-08-11T10:48:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/project/rn00bs/</loc>
+    <lastmod>2020-08-11T10:48:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/talk/</loc>
     <lastmod>2019-11-18T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/publication_types/1/</loc>
+    <lastmod>2019-11-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/adriana-dos-santos-lima/</loc>
+    <lastmod>2019-11-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -15,6 +176,17 @@
   
   <url>
     <loc>/tags/bayesian-inference/</loc>
+    <lastmod>2019-11-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/publication/ser2019/</loc>
+    <lastmod>2019-11-18T09:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/authors/patricia-viana-da-silva/</loc>
     <lastmod>2019-11-18T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -37,21 +209,32 @@
   </url>
   
   <url>
+    <loc>/authors/renato-valladares-panaro/</loc>
+    <lastmod>2019-11-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/segmented/</loc>
+    <lastmod>2019-11-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/authors/silvio-cabral-patricio/</loc>
+    <lastmod>2019-11-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/structural-equation-models/</loc>
     <lastmod>2019-11-18T09:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/</loc>
+    <loc>/publication/ebeb2020/</loc>
     <lastmod>2019-11-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2019-11-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -141,29 +324,6 @@
   </url>
   
   <url>
-    <loc>/tags/survival/</loc>
-    <lastmod>2019-05-23T11:30:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/talk/segmented/</loc>
-    <lastmod>2019-05-23T08:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/piecewise-regression/</loc>
-    <lastmod>2019-05-23T08:30:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/segmented/</loc>
-    <lastmod>2019-05-23T08:30:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/tags/energy-market/</loc>
     <lastmod>2019-02-28T09:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -186,31 +346,11 @@
   </url>
   
   <url>
-    <loc>/privacy/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/terms/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/authors/admin/</loc>
   </url>
   
   <url>
-    <loc>/authors/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/categories/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication_types/</loc>
     <priority>0</priority>
   </url>
   

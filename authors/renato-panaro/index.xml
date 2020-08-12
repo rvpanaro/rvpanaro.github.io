@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Renato Panaro | rvpanaro</title>
+    <link>/authors/renato-panaro/</link>
+      <atom:link href="/authors/renato-panaro/index.xml" rel="self" type="application/rss+xml" />
+    <description>Renato Panaro</description>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Tue, 18 Aug 2020 09:00:00 +0000</lastBuildDate>
+    <image>
+      <url>/img/icon-192.png</url>
+      <title>Renato Panaro</title>
+      <link>/authors/renato-panaro/</link>
+    </image>
+    
+    <item>
+      <title>Structural equation modeling with time dependence: an application comparing Brazilian energy distributors</title>
+      <link>/publication/atsa2020/</link>
+      <pubDate>Tue, 18 Aug 2020 09:00:00 +0000</pubDate>
+      <guid>/publication/atsa2020/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spsurv: An R package for semi-parametricsurvival analysis</title>
+      <link>/publication/maters/</link>
+      <pubDate>Tue, 18 Aug 2020 09:00:00 +0000</pubDate>
+      <guid>/publication/maters/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Structural equation modeling with time dependence: an application comparing Brazilian energy distributors</title>
+      <link>/publication/ebeb2020/</link>
+      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
+      <guid>/publication/ebeb2020/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
