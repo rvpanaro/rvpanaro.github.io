@@ -62,6 +62,12 @@
   </url>
   
   <url>
+    <loc>/</loc>
+    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/sem/</loc>
     <lastmod>2020-08-18T09:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -70,12 +76,6 @@
   <url>
     <loc>/publication/atsa2020/</loc>
     <lastmod>2020-08-18T09:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/survival/</loc>
-    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -91,14 +91,14 @@
   </url>
   
   <url>
-    <loc>/</loc>
+    <loc>/publication/maters/</loc>
     <lastmod>2020-08-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/publication/maters/</loc>
+    <loc>/tags/survival/</loc>
     <lastmod>2020-08-18T09:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
@@ -343,6 +343,16 @@
   <url>
     <loc>/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/privacy/</loc>
+    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/terms/</loc>
+    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
   </url>
   
   <url>

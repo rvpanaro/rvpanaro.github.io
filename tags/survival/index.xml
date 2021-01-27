@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Survival | rvpanaro</title>
+    <title>survival | Renato V. Panaro</title>
     <link>/tags/survival/</link>
       <atom:link href="/tags/survival/index.xml" rel="self" type="application/rss+xml" />
-    <description>Survival</description>
+    <description>survival</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Tue, 18 Aug 2020 09:00:00 +0000</lastBuildDate>
     <image>
       <url>/img/icon-192.png</url>
-      <title>Survival</title>
+      <title>survival</title>
       <link>/tags/survival/</link>
     </image>
     

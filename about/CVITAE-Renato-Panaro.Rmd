@@ -6,7 +6,7 @@ position: Statistician
 address: 
 phone: +55 21 9 97188 7955
 email: renatovp@ime.usp.br
-website: rvpanaro.github.io
+website: ime.usp.br/~renatovp
 github: rvpanaro
 linkedin: rvpanaro
 twitter: rvpanaro
@@ -43,7 +43,8 @@ tribble(
   ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
       "Master of science in Statistics", "Universidade Federal de Minas Gerais", "Minas Gerais, Brazil", "Mar. 2018 - Feb. 2020", "WAM: 87/100",
     "Master of science in Statistics", "Universidade Federal de Minas Gerais", "Minas Gerais, Brazil", "Mar. 2018 - Feb. 2020", "Dissertation: spsurv An R package for semi-parametric survival analysis.",
-    "Master of science in Statistics", "Universidade Federal de Minas Gerais", "Minas Gerais, Brazil", "Mar. 2018 - Feb. 2020", "Funding Agency: Fundação Christiano Ottoni",) %>% 
+    "Master of science in Statistics", "Universidade Federal de Minas Gerais", "Minas Gerais, Brazil", "Mar. 2018 - Feb. 2020", "Funding Agency: Fundação Christiano Ottoni",
+  "Master of science in Statistics", "Universidade Federal de Minas Gerais", "Minas Gerais, Brazil", "Mar. 2018 - Feb. 2020", "Advised by Vinícius Mayrink and Fábio Demarqui") %>% 
   detailed_entries(degree, dates, uni, loc, details)
 ```
 
@@ -60,7 +61,8 @@ Outstanding performance (> A-):
 tribble(
   ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
       "Bachelor of science in Statistics", "Universidade Federal Fluminense", "Rio de Janeiro, Brazil", "Apr. 2013 - Dec. 2017", "WAM: 76/100",
-    "Bachelor of science in Statistics", "Universidade Federal Fluminense", "Rio de Janeiro, Brazil", "Apr. 2013 - Dec. 2017", "Term paper: Modelagem e Previsão da Inflação Anual Efetiva medida pelo IPCA.",) %>% 
+    "Bachelor of science in Statistics", "Universidade Federal Fluminense", "Rio de Janeiro, Brazil", "Apr. 2013 - Dec. 2017", "Term paper: Modelagem e Previsão da Inflação Anual Efetiva medida pelo IPCA.",
+  "Bachelor of science in Statistics", "Universidade Federal Fluminense", "Rio de Janeiro, Brazil", "Apr. 2013 - Dec. 2017", "Advised by Ana Beatriz Fonseca and Victor Eduardo Duca") %>% 
   detailed_entries(degree, dates, uni, loc, details)
 ```
 
@@ -73,8 +75,6 @@ Outstanding performance (>90/100):
 - Multivariate Analysis (GET00126)
 - Time Series Analysis (GET00127)
 
-
-
 ```{r}
   tribble(
   ~ degree, ~ uni, ~ loc, ~ dates, ~ details,
@@ -84,12 +84,11 @@ Outstanding performance (>90/100):
   detailed_entries(degree, dates, uni, loc, details)
 ```
 
-
 Outstanding performance (> A-): 
 
 - Global Business (BUSADMIN 1300)
 - Management Accounting (ACCTING 2020)
-- Data Analysis & Decision Mkg (BUSADMIN 2340)
+- Data Analysis & Decision Making (BUSADMIN 2340)
 - Principles of Macroeconomics (ECONOMIC 2130)
 - US Culture (ESL 134)
 - Acad Listening and Note-Taking (ESL 151)
@@ -149,13 +148,13 @@ Contributed with analytics support to electoral and market research, outcome rep
 - Taught two classes in the discipline of introduction to computational statistics of the UFMG Statistics Department. Topic: Jackknife and bootstrap resampling methods.
 
 # Achievements
-## Certificates and licenses
+## Courses and licenses
 ```{r}
 tribble(
   ~ certificate, ~ from, ~ year,
   "Accredited Statistician", "CONRE-2", "2018",
   "Hands on Deep Learning extension", "DCC-UFMG", "2018",
-  "Rn00bs founder", "Rn00bs", "2018",
+  "Data visualization – the art/skill cocktail", "MPIDR", "2020"
 ) %>%
   brief_entries(certificate, year, from)
 ```
@@ -166,7 +165,7 @@ tribble(
 tribble(
   ~ scholarship, ~ from, ~ year,
   "spsurv", "CRAN R package", "2020",
-  "faStan", "Under review", "2020"
+  "bsem", "CRAN R package", "2020"
 ) %>%
   brief_entries(scholarship, year, from)
 ```
@@ -180,20 +179,12 @@ tribble(
 bibliography_entries(file = "pres.bib")
 ```
 
-## Submitted articles
+## Published
 
-Mayrink VD, Panaro RV and Costa MA. "Structural equation modeling with time dependence: an application comparing Brazilian energy distributors". Submitted in January/2020.
+Mayrink, V. D., Panaro, R. V., & Costa, M. A. (2020). Structural equation modeling with time dependence: an application comparing Brazilian energy distributors. AStA Advances in Statistical Analysis, 1-31.
 \newpage
 
 # References
-
-Fábio Nogueira Demarqui, Ph.D. \
-Statistics Department  \
-Universidade Federal de Minas Gerais, ICEx Pampulha Campus \
-Av. Antônio Carlos 6627 \
-Belo Horizonte, MG 31270-901 \
-+55 31-3409-5900 \
-fndemarqui@gmail.com \
 
 Vinícius Diniz Mayrink, Ph.D. \
 Statistics Department  \
@@ -203,6 +194,13 @@ Belo Horizonte, MG 31270-901 \
 +55 31-3409-5900 \
 vdinizm@gmail.com \
 
+Fábio Nogueira Demarqui, Ph.D. \
+Statistics Department  \
+Universidade Federal de Minas Gerais, ICEx Pampulha Campus \
+Av. Antônio Carlos 6627 \
+Belo Horizonte, MG 31270-901 \
++55 31-3409-5900 \
+fndemarqui@gmail.com \
 
 Adriano Von Pfuhl Rodrigues, Chief Statistician \
 Research Institute Instituto GPP \
