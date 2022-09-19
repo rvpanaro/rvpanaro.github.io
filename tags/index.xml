@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags | Renato V. Panaro</title>
+    <title>Tags | Renato Valladares Panaro</title>
     <link>/tags/</link>
       <atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     <description>Tags</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Tue, 18 Aug 2020 09:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2022</copyright><lastBuildDate>Tue, 11 Aug 2020 10:58:00 +0000</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>img/icon-192.png</url>
       <title>Tags</title>
       <link>/tags/</link>
     </image>
@@ -15,48 +15,8 @@
     <item>
       <title>Bayesian</title>
       <link>/tags/bayesian/</link>
-      <pubDate>Tue, 18 Aug 2020 09:00:00 +0000</pubDate>
+      <pubDate>Tue, 11 Aug 2020 10:58:00 +0000</pubDate>
       <guid>/tags/bayesian/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Regression</title>
-      <link>/tags/regression/</link>
-      <pubDate>Tue, 18 Aug 2020 09:00:00 +0000</pubDate>
-      <guid>/tags/regression/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SEM</title>
-      <link>/tags/sem/</link>
-      <pubDate>Tue, 18 Aug 2020 09:00:00 +0000</pubDate>
-      <guid>/tags/sem/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>survival</title>
-      <link>/tags/survival/</link>
-      <pubDate>Tue, 18 Aug 2020 09:00:00 +0000</pubDate>
-      <guid>/tags/survival/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Exploratory</title>
-      <link>/tags/exploratory/</link>
-      <pubDate>Tue, 11 Aug 2020 11:09:00 +0000</pubDate>
-      <guid>/tags/exploratory/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Spatial</title>
-      <link>/tags/spatial/</link>
-      <pubDate>Tue, 11 Aug 2020 11:09:00 +0000</pubDate>
-      <guid>/tags/spatial/</guid>
       <description></description>
     </item>
     
@@ -69,10 +29,10 @@
     </item>
     
     <item>
-      <title>Blog</title>
-      <link>/tags/blog/</link>
-      <pubDate>Tue, 11 Aug 2020 10:48:00 +0000</pubDate>
-      <guid>/tags/blog/</guid>
+      <title>Survival</title>
+      <link>/tags/survival/</link>
+      <pubDate>Tue, 11 Aug 2020 10:58:00 +0000</pubDate>
+      <guid>/tags/survival/</guid>
       <description></description>
     </item>
     
@@ -109,14 +69,6 @@
     </item>
     
     <item>
-      <title>Segmented</title>
-      <link>/tags/segmented/</link>
-      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
-      <guid>/tags/segmented/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Structural Equation Models</title>
       <link>/tags/structural-equation-models/</link>
       <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
@@ -137,6 +89,14 @@
       <link>/tags/dynamic-linear-model/</link>
       <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
       <guid>/tags/dynamic-linear-model/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>inflation</title>
+      <link>/tags/inflation/</link>
+      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
+      <guid>/tags/inflation/</guid>
       <description></description>
     </item>
     
@@ -165,30 +125,6 @@
     </item>
     
     <item>
-      <title>inflation</title>
-      <link>/tags/inflation/</link>
-      <pubDate>Thu, 05 Sep 2019 19:45:00 +0000</pubDate>
-      <guid>/tags/inflation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Machine Learning</title>
-      <link>/tags/machine-learning/</link>
-      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
-      <guid>/tags/machine-learning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rstan</title>
-      <link>/tags/rstan/</link>
-      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
-      <guid>/tags/rstan/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>bernstein polynomial</title>
       <link>/tags/bernstein-polynomial/</link>
       <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
@@ -209,6 +145,22 @@
       <link>/tags/ensemble/</link>
       <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
       <guid>/tags/ensemble/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>/tags/machine-learning/</link>
+      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
+      <guid>/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rstan</title>
+      <link>/tags/rstan/</link>
+      <pubDate>Thu, 23 May 2019 11:30:00 +0000</pubDate>
+      <guid>/tags/rstan/</guid>
       <description></description>
     </item>
     

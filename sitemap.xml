@@ -1,367 +1,115 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
-  <url>
-    <loc>/publication_types/2/</loc>
-    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication_types/3/</loc>
-    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/</loc>
-    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
   <url>
     <loc>/tags/bayesian/</loc>
-    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/fabio-demarqui/</loc>
-    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/marcelo-azevedo/</loc>
-    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication_types/</loc>
-    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/</loc>
-    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/regression/</loc>
-    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/renato-panaro/</loc>
-    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/sem/</loc>
-    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/atsa2020/</loc>
-    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/vinicius-mayrink/</loc>
-    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/maters/</loc>
-    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/survival/</loc>
-    <lastmod>2020-08-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/exploratory/</loc>
-    <lastmod>2020-08-11T11:09:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/project/</loc>
-    <lastmod>2020-08-11T11:09:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/spatial/</loc>
-    <lastmod>2020-08-11T11:09:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/project/mourafinder/</loc>
-    <lastmod>2020-08-11T11:09:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/latent/</loc>
     <lastmod>2020-08-11T10:58:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/project/bsem/</loc>
     <lastmod>2020-08-11T10:58:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/tags/latent/</loc>
+    <lastmod>2020-08-11T10:58:00+00:00</lastmod>
+  </url><url>
+    <loc>/project/</loc>
+    <lastmod>2020-08-11T10:58:00+00:00</lastmod>
+  </url><url>
+    <loc>/</loc>
+    <lastmod>2020-08-11T10:58:00+00:00</lastmod>
+  </url><url>
     <loc>/project/spsurv/</loc>
     <lastmod>2020-08-11T10:58:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/blog/</loc>
-    <lastmod>2020-08-11T10:48:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/project/rn00bs/</loc>
-    <lastmod>2020-08-11T10:48:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/tags/survival/</loc>
+    <lastmod>2020-08-11T10:58:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/</loc>
+    <lastmod>2020-08-11T10:58:00+00:00</lastmod>
+  </url><url>
     <loc>/talk/</loc>
     <lastmod>2019-11-18T09:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/publication_types/1/</loc>
-    <lastmod>2019-11-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/adriana-dos-santos-lima/</loc>
-    <lastmod>2019-11-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/autoencoder/</loc>
     <lastmod>2019-11-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/bayesian-inference/</loc>
     <lastmod>2019-11-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/ser2019/</loc>
-    <lastmod>2019-11-18T09:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/authors/patricia-viana-da-silva/</loc>
-    <lastmod>2019-11-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/talk/csds/</loc>
     <lastmod>2019-11-18T09:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/principal-component-analysis-regression/</loc>
     <lastmod>2019-11-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/regression-tree/</loc>
     <lastmod>2019-11-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/renato-valladares-panaro/</loc>
-    <lastmod>2019-11-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/segmented/</loc>
-    <lastmod>2019-11-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/authors/silvio-cabral-patricio/</loc>
-    <lastmod>2019-11-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/structural-equation-models/</loc>
     <lastmod>2019-11-18T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/publication/ebeb2020/</loc>
-    <lastmod>2019-11-18T09:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/box-jenkins/</loc>
     <lastmod>2019-09-05T19:45:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/dynamic-linear-model/</loc>
     <lastmod>2019-09-05T19:45:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/ipca/</loc>
-    <lastmod>2019-09-05T19:45:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/talk/este/</loc>
-    <lastmod>2019-09-05T19:45:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/sarima/</loc>
-    <lastmod>2019-09-05T19:45:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/time-series/</loc>
-    <lastmod>2019-09-05T19:45:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/inflation/</loc>
     <lastmod>2019-09-05T19:45:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/tags/ipca/</loc>
+    <lastmod>2019-09-05T19:45:00+00:00</lastmod>
+  </url><url>
+    <loc>/talk/este/</loc>
+    <lastmod>2019-09-05T19:45:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/sarima/</loc>
+    <lastmod>2019-09-05T19:45:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/time-series/</loc>
+    <lastmod>2019-09-05T19:45:00+00:00</lastmod>
+  </url><url>
     <loc>/about/</loc>
     <lastmod>2019-05-25T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/talk/ensemble/</loc>
-    <lastmod>2019-05-23T11:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/machine-learning/</loc>
-    <lastmod>2019-05-23T11:30:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/rstan/</loc>
-    <lastmod>2019-05-23T11:30:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/talk/spsurv/</loc>
-    <lastmod>2019-05-23T11:30:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/bernstein-polynomial/</loc>
     <lastmod>2019-05-23T11:30:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/talk/ensemble/</loc>
+    <lastmod>2019-05-23T11:30:00+00:00</lastmod>
+  </url><url>
     <loc>/tags/classification/</loc>
     <lastmod>2019-05-23T11:30:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/tags/ensemble/</loc>
     <lastmod>2019-05-23T11:30:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/tags/machine-learning/</loc>
+    <lastmod>2019-05-23T11:30:00+00:00</lastmod>
+  </url><url>
+    <loc>/tags/rstan/</loc>
+    <lastmod>2019-05-23T11:30:00+00:00</lastmod>
+  </url><url>
+    <loc>/talk/spsurv/</loc>
+    <lastmod>2019-05-23T11:30:00+00:00</lastmod>
+  </url><url>
     <loc>/tags/energy-market/</loc>
     <lastmod>2019-02-28T09:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/talk/dsufrj/</loc>
     <lastmod>2019-02-28T09:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/slides/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/slides/example/</loc>
     <lastmod>2019-02-05T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/privacy/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/terms/</loc>
-    <lastmod>2018-06-28T00:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>/authors/admin/</loc>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>/authors/</loc>
+  </url><url>
     <loc>/categories/</loc>
-    <priority>0</priority>
+  </url><url>
+    <loc>/publication_types/</loc>
   </url>
-  
 </urlset>

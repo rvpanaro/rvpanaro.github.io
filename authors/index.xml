@@ -1,80 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Authors | Renato V. Panaro</title>
+    <title>Authors | Renato Valladares Panaro</title>
     <link>/authors/</link>
       <atom:link href="/authors/index.xml" rel="self" type="application/rss+xml" />
     <description>Authors</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Tue, 18 Aug 2020 09:00:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2022</copyright>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>img/icon-192.png</url>
       <title>Authors</title>
       <link>/authors/</link>
     </image>
-    
-    <item>
-      <title>Fábio Demarqui</title>
-      <link>/authors/fabio-demarqui/</link>
-      <pubDate>Tue, 18 Aug 2020 09:00:00 +0000</pubDate>
-      <guid>/authors/fabio-demarqui/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Marcelo Azevedo</title>
-      <link>/authors/marcelo-azevedo/</link>
-      <pubDate>Tue, 18 Aug 2020 09:00:00 +0000</pubDate>
-      <guid>/authors/marcelo-azevedo/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Renato Panaro</title>
-      <link>/authors/renato-panaro/</link>
-      <pubDate>Tue, 18 Aug 2020 09:00:00 +0000</pubDate>
-      <guid>/authors/renato-panaro/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Vinícius Mayrink</title>
-      <link>/authors/vinicius-mayrink/</link>
-      <pubDate>Tue, 18 Aug 2020 09:00:00 +0000</pubDate>
-      <guid>/authors/vinicius-mayrink/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Adriana dos Santos Lima</title>
-      <link>/authors/adriana-dos-santos-lima/</link>
-      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
-      <guid>/authors/adriana-dos-santos-lima/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Patrícia Viana da Silva</title>
-      <link>/authors/patricia-viana-da-silva/</link>
-      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
-      <guid>/authors/patricia-viana-da-silva/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Renato Valladares Panaro</title>
-      <link>/authors/renato-valladares-panaro/</link>
-      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
-      <guid>/authors/renato-valladares-panaro/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Silvio Cabral Patrício</title>
-      <link>/authors/silvio-cabral-patricio/</link>
-      <pubDate>Mon, 18 Nov 2019 09:00:00 +0000</pubDate>
-      <guid>/authors/silvio-cabral-patricio/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title></title>

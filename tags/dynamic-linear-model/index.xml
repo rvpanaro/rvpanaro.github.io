@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dynamic Linear Model | Renato V. Panaro</title>
+    <title>Dynamic Linear Model | Renato Valladares Panaro</title>
     <link>/tags/dynamic-linear-model/</link>
       <atom:link href="/tags/dynamic-linear-model/index.xml" rel="self" type="application/rss+xml" />
     <description>Dynamic Linear Model</description>
-    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2019</copyright><lastBuildDate>Thu, 05 Sep 2019 19:45:00 +0000</lastBuildDate>
+    <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© 2022</copyright><lastBuildDate>Thu, 05 Sep 2019 19:45:00 +0000</lastBuildDate>
     <image>
-      <url>/img/icon-192.png</url>
+      <url>img/icon-192.png</url>
       <title>Dynamic Linear Model</title>
       <link>/tags/dynamic-linear-model/</link>
     </image>
