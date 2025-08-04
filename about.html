@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Renato Panaro – Doctoral Research Associate</title>
+
+  <!-- SEO & Social Preview -->
+  <meta name="description" content="Renato Panaro – PhD candidate and statistician building reproducible statistical tooling for uncertainty-aware decision support and evidence synthesis."/>
+  <meta name="keywords" content="evidence synthesis, clinical decision support, R packages, reproducible analytics, uncertainty-aware decision support"/>
+  <meta property="og:title" content="Renato Panaro – Doctoral Research Associate"/>
+  <meta property="og:description" content="Building reproducible statistical tooling to turn evidence into uncertainty-aware insight."/>
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="en_US"/>
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:creator" content="@rvpanaro"/>
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon"/>
+  <link rel="apple-touch-icon" href="apple-touch-icon.png"/>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Renato Valladares Panaro",
+    "jobTitle": "Doctoral Research Associate",
+    "affiliation": {
+      "@type": "Organization",
+      "name": "Institute for Medical Statistics, Göttingen"
+    },
+    "email": "mailto:rvpanaro@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Germany"
+    },
+    "sameAs": [
+      "https://github.com/rvpanaro",
+      "https://linkedin.com/in/renato-panaro"
+    ],
+    "keywords": "statistical analysis, statistical software development, decision support, business insights"
+  }
+  </script>
+
+  <!-- Minimal styles for demonstration -->
+  <style>
+    :root {
+      --bg:#fff;
+      --fg:#1e1e2e;
+      --muted:#6e6e85;
+      --radius:12px;
+      --shadow:0 10px 30px -5px rgba(0,0,0,0.1);
+      --transition:.3s cubic-bezier(.4,.2,.2,1);
+      font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    }
+    [data-theme="dark"] {
+      --bg:#0f111a;
+      --fg:#e8e9f2;
+      --muted:#8a8fbf;
+    }
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:var(--fg);
+      line-height:1.55;
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+      scroll-behavior:smooth;
+    }
+    a{color:inherit; text-decoration:none;}
+    h1,h2{margin:0 0 .4em;font-weight:600;}
+    p{margin:0 0 1em;}
+    header{padding:1rem; border-bottom:1px solid rgba(0,0,0,0.08); position:sticky; top:0; background:var(--bg); z-index:10;}
+    nav{max-width:1080px;margin:0 auto;display:flex;align-items:center;gap:1rem;flex-wrap:wrap;}
+    .nav-left{display:flex;align-items:center;gap:1rem; flex:1 1 auto; min-width:0;}
+    .avatar-placeholder img{
+      width:64px;
+      height:64px;
+      object-fit:cover;
+      border-radius:50%;
+      display:block;
+      background:rgba(0,0,0,0.05);
+    }
+    .name-role{min-width:0;}
+    .name-role h1{font-size:1.4rem;margin-bottom:4px;}
+    .name-role p{margin:2px 0;font-size:.9rem;}
+    .nav-links{
+      list-style:none;
+      display:flex;
+      gap:1rem;
+      margin:0;
+      padding:0;
+      align-items:center;
+      flex:0 0 auto;
+    }
+    .nav-links li{position:relative;}
+    .nav-links a{padding:.4em .8em; border-radius:8px; font-size:.85rem; display:inline-block; transition:background var(--transition);}
+    .nav-links a:hover, .nav-links a:focus{background:rgba(0,0,0,0.05);}
+    .dropdown .dropbtn{cursor:pointer;}
+    .dropdown-content{
+      position:absolute;
+      top:100%;
+      left:0;
+      background:var(--bg);
+      border:1px solid rgba(0,0,0,0.1);
+      border-radius:8px;
+      min-width:140px;
+      padding:.5em 0;
+      box-shadow:0 15px 40px -10px rgba(0,0,0,0.15);
+      display:none;
+      z-index:5;
+    }
+    .dropdown-content a{
+      display:block;
+      padding:.5em 1em;
+      font-size:.85rem;
+    }
+    .dropdown-content a:hover, .dropdown-content a:focus{background:rgba(0,0,0,0.05);}
+    .dropdown .show { display:block; }
+    .theme-switcher{
+      margin-left:8px;
+      background:none;
+      border:1px solid var(--muted);
+      padding:.35em .6em;
+      border-radius:999px;
+      cursor:pointer;
+      font-size:.7rem;
+      display:inline-flex;
+      align-items:center;
+      gap:.3em;
+    }
+
+    main{
+      flex:1;
+      padding:2rem 1rem;
+      max-width:1000px;
+      margin:0 auto;
+      display:flow-root;
+      gap:2rem;
+    }
+    section{
+      margin-bottom:2rem;
+    }
+    .elevator-pitch{
+      font-weight:600;
+      background:rgba(100,100,255,0.05);
+      padding:.75em 1em;
+      border-radius:10px;
+      display:inline-block;
+      margin-bottom:1em;
+    }
+    .pills{
+      display:flex;
+      flex-wrap:wrap;
+      gap:.5rem;
+    }
+    .pill{
+      background:rgba(100,100,255,0.1);
+      padding:.4em .9em;
+      border-radius:999px;
+      font-size:.75rem;
+      display:inline-block;
+    }
+
+    .key-signal-placeholder, .testimonial-carousel, .mentions-placeholder{
+      display:grid;
+      gap:1rem;
+    }
+
+    blockquote{
+      margin:0;
+      padding:1em 1.25em;
+      background:rgba(100,100,255,0.05);
+      border-left:4px solid #6366f1;
+      border-radius:8px;
+      position:relative;
+      font-style:italic;
+    }
+
+    .testimonials-list{
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+    .testimonials-list li{
+      margin-bottom:.75rem;
+      background:rgba(0,0,0,0.03);
+      padding: .75em 1em;
+      border-radius:8px;
+    }
+    .mentions-placeholder p{
+      background:rgba(0,0,0,0.03);
+      padding:.6em .9em;
+      border-radius:6px;
+      margin:0;
+      font-size:.9rem;
+    }
+    .contact a{color:#4f46e5;}
+    footer{
+      text-align:center;
+      padding:1em;
+      font-size:.75rem;
+      background:rgba(0,0,0,0.02);
+    }
+
+    /* Responsive tweaks */
+    @media (max-width:900px){
+      .nav-links{flex-wrap:wrap; gap:.5rem;}
+      .nav-left{flex:1 1 100%; margin-bottom:.5rem;}
+    }
+
+    /* Simple testimonial carousel scaffolding (no dependency) */
+    .carousel {
+      position: relative;
+      overflow: hidden;
+    }
+    .carousel-inner {
+      display: flex;
+      gap:1rem;
+      transition: transform .5s ease;
+    }
+    .carousel-item {
+      min-width:100%;
+      flex-shrink:0;
+    }
+    .carousel-controls {
+      margin-top:.5rem;
+      display:flex;
+      gap:.5rem;
+      justify-content:center;
+    }
+    .btn-small{
+      background:none;
+      border:1px solid var(--muted);
+      padding:.35em .75em;
+      border-radius:6px;
+      cursor:pointer;
+      font-size:.65rem;
+    }
+  </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-left">
+                <div class="avatar-placeholder">
+                    <img src="avatar.png" alt="Renato Panaro's Avatar">
+                </div>
+                <div class="name-role">
+                    <h1>Renato Panaro</h1>
+                    <p>PhD Candidate, Statistician</p>
+                    <p class="location">Based in Germany (CET)</p>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://www.linkedin.com/in/rvpanaro/" target="_blank">XP</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn" aria-haspopup="true" aria-expanded="false">R packages</a>
+                    <div class="dropdown-content" role="menu">
+                        <a href="https://rvpanaro.github.io/spsurv/" target="_blank" role="menuitem">spsurv</a>
+                        <a href="https://rvpanaro.github.io/bsem/" target="_blank" role="menuitem">bsem</a>
+                    </div>
+                </li>
+                <li><a href="https://scholar.google.com/citations?user=YOUR_GOOGLE_SCHOLAR_ID" target="_blank">Publications</a></li>
+                <li><a href="https://rvpanaro.notion.site/245230b1f57580c8b398c42a8913f29f?v=245230b1f57580e0bd6e000c6be59761" target="_blank">Talks</a></li>
+                <li>
+                  <button class="theme-switcher" aria-label="Toggle theme">
+                    <span class="theme-label"></span>
+                  </button>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+  <main>
+    <section class="skills" aria-labelledby="focus-heading">
+      <h2 id="focus-heading">Focus Areas</h2>
+      <div class="pills" role="list">
+        <span class="pill" role="listitem">evidence synthesis</span>
+        <span class="pill" role="listitem">statistical software development</span>
+        <span class="pill" role="listitem">reliable decision under uncertainty</span>
+        <span class="pill" role="listitem">decision support</span>
+        <span class="pill" role="listitem">business insights</span>
+      </div>
+    </section>
+
+    <section class="interest" aria-labelledby="interest-heading">
+      <h2 id="interest-heading">Key Interests</h2>
+      <div class="key-signal-placeholder">
+        <blockquote>
+          Build and maintain R packages (spsurv, bsem) as tangible outputs.
+        </blockquote>
+        <blockquote>
+          Emphasize transferable impact: “Production-ready modeling”, “Reproducible analytics”, “Uncertainty-aware decision support.”
+        </blockquote>
+        <blockquote>
+          Ongoing work in statistical methods for clinical decision support.
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="testimonials" aria-labelledby="testimonials-heading">
+      <h2 id="testimonials-heading">Feedback</h2>
+
+      <!-- Simple JS-enabled carousel scaffold -->
+      <div class="carousel" aria-label="Student testimonials" tabindex="0">
+        <div class="carousel-inner" id="carousel-inner">
+          <div class="carousel-item" aria-hidden="false">
+            <div class="testimonials-list">
+              <div>
+                <p>“Das Anbieten eines englischen Moduls war eine tolle Möglichkeit,
+                <br>gerade auch weil es zu dem Thema passt...; außerdem war unser Dozent sehr kompetent und nett.”</p>
+                <p><em>(Offering an English module was a great opportunity... our lecturer was very knowledgeable and friendly.)</em></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" aria-hidden="true">
+            <div class="testimonials-list">
+              <div>
+                <p>“Unser Dozent im englischen Seminar war sehr kompetent und hat trotz des teils nicht so aufmerksamen Publikums <br>sehr engagiert versucht, uns die relevanten Sachen beizubringen.”</p>
+                <p><em>(Our lecturer in the English seminar was very knowledgeable... tried very hard to teach us the relevant material.)</em></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" aria-hidden="true">
+            <div class="testimonials-list">
+              <div>
+                <p>“I liked when we tried to solve the exercises all together.”</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" aria-hidden="true">
+            <div class="testimonials-list">
+              <div>
+                <p>“Renato was especially attentive and answered patiently to all our questions,<br> allowing us to revise all the material and focus on important things.”</p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item" aria-hidden="true">
+            <div class="testimonials-list">
+              <div>
+                <p>“Overall, very good classes, right amount of content and simple enough.”</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-controls">
+          <button class="btn-small" aria-label="Previous testimonial" id="prev">←</button>
+          <button class="btn-small" aria-label="Next testimonial" id="next">→</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact </h2>
+      <p>Email: <a href="mailto:rvpanaro@gmail.com">rvpanaro@gmail.com</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="current-year"></span> Renato Valladares Panaro. Source: <a href="https://github.com/rvpanaro/rvpanaro.github.io" target="_blank" rel="noopener">GitHub Repo</a></p>
+  </footer>
+
+  <script>
+    // current year
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+
+    // dropdown accessibility
+    document.querySelectorAll('.dropdown').forEach(dropdown => {
+      const btn = dropdown.querySelector('.dropbtn');
+      const menu = dropdown.querySelector('.dropdown-content');
+
+      btn.addEventListener('click', e => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', String(!expanded));
+        menu.classList.toggle('show');
+      });
+
+      btn.addEventListener('keydown', e => {
+        if (e.key === 'Escape') {
+          menu.classList.remove('show');
+          btn.setAttribute('aria-expanded', 'false');
+          btn.focus();
+        }
+      });
+
+      document.addEventListener('click', e => {
+        if (!dropdown.contains(e.target)) {
+          menu.classList.remove('show');
+          btn.setAttribute('aria-expanded', 'false');
+        }
+      });
+    });
+
+    // dark / light toggle (robust)
+    const themeBtn = document.querySelector('.theme-switcher');
+    if (themeBtn) {
+      let themeLabel = themeBtn.querySelector('.theme-label');
+      if (!themeLabel) {
+        themeLabel = document.createElement('span');
+        themeLabel.className = 'theme-label';
+        themeBtn.appendChild(themeLabel);
+      }
+
+      function setTheme(t) {
+        document.documentElement.setAttribute('data-theme', t);
+        themeLabel.textContent = t === 'dark' ? 'Light' : 'Dark';
+        themeBtn.setAttribute('aria-label', t === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
+        // preserve the label inside button
+        themeBtn.textContent = '';
+        themeBtn.appendChild(themeLabel);
+      }
+
+      const stored = localStorage.getItem('theme');
+      const initial = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      setTheme(initial);
+      themeBtn.addEventListener('click', () => {
+        const current = document.documentElement.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        setTheme(next);
+        localStorage.setItem('theme', next);
+      });
+    }
+
+    // carousel logic with pause-on-interaction
+    const inner = document.getElementById('carousel-inner');
+    const items = inner?.querySelectorAll('.carousel-item') || [];
+    let idx = 0;
+    let autoAdvanceId = null;
+    const advanceInterval = 7000;
+
+    function updateCarousel() {
+      if (!inner) return;
+      inner.style.transform = `translateX(-${idx * 100}%)`;
+      items.forEach((it, i) => it.setAttribute('aria-hidden', i !== idx));
+    }
+
+    function startAutoAdvance() {
+      stopAutoAdvance();
+      autoAdvanceId = setInterval(() => {
+        idx = (idx + 1) % items.length;
+        updateCarousel();
+      }, advanceInterval);
+    }
+
+    function stopAutoAdvance() {
+      if (autoAdvanceId !== null) {
+        clearInterval(autoAdvanceId);
+        autoAdvanceId = null;
+      }
+    }
+
+    document.getElementById('prev')?.addEventListener('click', () => {
+      idx = (idx - 1 + items.length) % items.length;
+      updateCarousel();
+    });
+    document.getElementById('next')?.addEventListener('click', () => {
+      idx = (idx + 1) % items.length;
+      updateCarousel();
+    });
+
+    const carouselEl = document.querySelector('.carousel');
+    if (carouselEl) {
+      carouselEl.addEventListener('mouseenter', stopAutoAdvance);
+      carouselEl.addEventListener('focusin', stopAutoAdvance);
+      carouselEl.addEventListener('mouseleave', startAutoAdvance);
+      carouselEl.addEventListener('focusout', startAutoAdvance);
+    }
+
+    updateCarousel();
+    startAutoAdvance();
+  </script>
+</body>
+</html>
