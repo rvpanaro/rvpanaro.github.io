@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Renato Panaro – Doctoral Research Associate</title>
+  <title>Renato Panaro – Biostatistician | Clinical Trials, Survival Analysis, Evidence Synthesis</title>
 
   <!-- SEO & Social Preview -->
-  <meta name="description" content="Renato Panaro – PhD candidate and statistician building reproducible statistical tooling for uncertainty-aware decision support and evidence synthesis."/>
-  <meta name="keywords" content="evidence synthesis, clinical decision support, R packages, reproducible analytics, uncertainty-aware decision support"/>
-  <meta property="og:title" content="Renato Panaro – Doctoral Research Associate"/>
-  <meta property="og:description" content="Building reproducible statistical tooling to turn evidence into uncertainty-aware insight."/>
+  <meta name="description" content="PhD student in Biostatistics, Department of Medical Statistics, UMG Göttingen. Meta-analysis, survival analysis, R, SAS, RStan. Google Scholar."/>
+  <meta name="keywords" content="biostatistician, medical statistician, clinical trials, survival analysis, Bayesian methods, evidence synthesis, meta-analysis, R, SAS, RStan, statistical programmer, pharmaceutical, CRO"/>
+  <meta property="og:title" content="Renato Panaro – Biostatistician"/>
+  <meta property="og:description" content="Biostatistician specializing in clinical research, survival analysis, and evidence synthesis. R, Bayesian methods, reproducible statistical workflows."/>
   <meta property="og:type" content="website"/>
   <meta property="og:locale" content="en_US"/>
   <meta name="twitter:card" content="summary_large_image"/>
@@ -25,10 +25,10 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Renato Valladares Panaro",
-    "jobTitle": "Doctoral Research Associate",
+    "jobTitle": "PhD student (Biostatistics)",
     "affiliation": {
       "@type": "Organization",
-      "name": "Institute for Medical Statistics, Göttingen"
+      "name": "Department of Medical Statistics, University Medical Center Göttingen"
     },
     "email": "mailto:rvpanaro@gmail.com",
     "address": {
@@ -39,332 +39,52 @@
       "https://github.com/rvpanaro",
       "https://linkedin.com/in/renato-panaro"
     ],
-    "keywords": "statistical analysis, statistical software development, decision support, business insights"
+    "keywords": "biostatistics, clinical trials, survival analysis, Bayesian methods, evidence synthesis, R, statistical programming"
   }
   </script>
 
-  <!-- Minimal styles for demonstration -->
-  <style>
-    :root {
-      --bg:#fff;
-      --fg:#1e1e2e;
-      --muted:#6e6e85;
-      --radius:12px;
-      --shadow:0 10px 30px -5px rgba(0,0,0,0.1);
-      --transition:.3s cubic-bezier(.4,.2,.2,1);
-      font-family: system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
-    }
-    [data-theme="dark"] {
-      --bg:#0f111a;
-      --fg:#e8e9f2;
-      --muted:#8a8fbf;
-    }
-    *{box-sizing:border-box;}
-    body{
-      margin:0;
-      background:var(--bg);
-      color:var(--fg);
-      line-height:1.55;
-      min-height:100vh;
-      display:flex;
-      flex-direction:column;
-      scroll-behavior:smooth;
-    }
-    a{color:inherit; text-decoration:none;}
-    h1,h2{margin:0 0 .4em;font-weight:600;}
-    p{margin:0 0 1em;}
-    header{padding:1rem; border-bottom:1px solid rgba(0,0,0,0.08); position:sticky; top:0; background:var(--bg); z-index:10;}
-    nav{max-width:1080px;margin:0 auto;display:flex;align-items:center;gap:1rem;flex-wrap:wrap;}
-    .nav-left{display:flex;align-items:center;gap:1rem; flex:1 1 auto; min-width:0;}
-    .avatar-placeholder img{
-      width:64px;
-      height:64px;
-      object-fit:cover;
-      border-radius:50%;
-      display:block;
-      background:rgba(0,0,0,0.05);
-    }
-    .name-role{min-width:0;}
-    .name-role h1{font-size:1.4rem;margin-bottom:4px;}
-    .name-role p{margin:2px 0;font-size:.9rem;}
-    .nav-links{
-      list-style:none;
-      display:flex;
-      gap:1rem;
-      margin:0;
-      padding:0;
-      align-items:center;
-      flex:0 0 auto;
-    }
-    .nav-links li{position:relative;}
-    .nav-links a{padding:.4em .8em; border-radius:8px; font-size:.85rem; display:inline-block; transition:background var(--transition);}
-    .nav-links a:hover, .nav-links a:focus{background:rgba(0,0,0,0.05);}
-    .dropdown .dropbtn{cursor:pointer;}
-    .dropdown-content{
-      position:absolute;
-      top:100%;
-      left:0;
-      background:var(--bg);
-      border:1px solid rgba(0,0,0,0.1);
-      border-radius:8px;
-      min-width:140px;
-      padding:.5em 0;
-      box-shadow:0 15px 40px -10px rgba(0,0,0,0.15);
-      display:none;
-      z-index:5;
-    }
-    .dropdown-content a{
-      display:block;
-      padding:.5em 1em;
-      font-size:.85rem;
-    }
-    .dropdown-content a:hover, .dropdown-content a:focus{background:rgba(0,0,0,0.05);}
-    .dropdown .show { display:block; }
-    .theme-switcher{
-      margin-left:8px;
-      background:none;
-      border:1px solid var(--muted);
-      padding:.35em .6em;
-      border-radius:999px;
-      cursor:pointer;
-      font-size:.7rem;
-      display:inline-flex;
-      align-items:center;
-      gap:.3em;
-    }
-
-    main{
-      flex:1;
-      padding:2rem 1rem;
-      max-width:1000px;
-      margin:0 auto;
-      display:flow-root;
-      gap:2rem;
-    }
-    section{
-      margin-bottom:2rem;
-    }
-    .elevator-pitch{
-      font-weight:600;
-      background:rgba(100,100,255,0.05);
-      padding:.75em 1em;
-      border-radius:10px;
-      display:inline-block;
-      margin-bottom:1em;
-    }
-    .pills{
-      display:flex;
-      flex-wrap:wrap;
-      gap:.5rem;
-    }
-    .pill{
-      background:rgba(100,100,255,0.1);
-      padding:.4em .9em;
-      border-radius:999px;
-      font-size:.75rem;
-      display:inline-block;
-    }
-
-    .key-signal-placeholder, .testimonial-carousel, .mentions-placeholder{
-      display:grid;
-      gap:1rem;
-    }
-
-    blockquote{
-      margin:0;
-      padding:1em 1.25em;
-      background:rgba(100,100,255,0.05);
-      border-left:4px solid #6366f1;
-      border-radius:8px;
-      position:relative;
-      font-style:italic;
-    }
-
-    .testimonials-list{
-      list-style:none;
-      padding:0;
-      margin:0;
-    }
-    .testimonials-list li{
-      margin-bottom:.75rem;
-      background:rgba(0,0,0,0.03);
-      padding: .75em 1em;
-      border-radius:8px;
-    }
-    .mentions-placeholder p{
-      background:rgba(0,0,0,0.03);
-      padding:.6em .9em;
-      border-radius:6px;
-      margin:0;
-      font-size:.9rem;
-    }
-    .contact a{color:#4f46e5;}
-    footer{
-      text-align:center;
-      padding:1em;
-      font-size:.75rem;
-      background:rgba(0,0,0,0.02);
-    }
-
-    /* Responsive tweaks */
-    @media (max-width:900px){
-      .nav-links{flex-wrap:wrap; gap:.5rem;}
-      .nav-left{flex:1 1 100%; margin-bottom:.5rem;}
-    }
-
-    /* Simple testimonial carousel scaffolding (no dependency) */
-    .carousel {
-      position: relative;
-      overflow: hidden;
-    }
-    .carousel-inner {
-      display: flex;
-      gap:1rem;
-      transition: transform .5s ease;
-    }
-    .carousel-item {
-      min-width:100%;
-      flex-shrink:0;
-    }
-    .carousel-controls {
-      margin-top:.5rem;
-      display:flex;
-      gap:.5rem;
-      justify-content:center;
-    }
-    .btn-small{
-      background:none;
-      border:1px solid var(--muted);
-      padding:.35em .75em;
-      border-radius:6px;
-      cursor:pointer;
-      font-size:.65rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet"/>
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="nav-left">
-                <div class="avatar-placeholder">
-                    <img src="avatar.png" alt="Renato Panaro's Avatar">
-                </div>
-                <div class="name-role">
-                    <h1>Renato Panaro</h1>
-                    <p>PhD Candidate, Statistician</p>
-                    <p class="location">Based in Germany (CET)</p>
-                </div>
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="https://www.linkedin.com/in/rvpanaro/" target="_blank">XP</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">R packages</a>
-                    <div class="dropdown-content">
-                        <a href="https://rvpanaro.github.io/spsurv/" target="_blank">spsurv</a>
-                        <a href="https://rvpanaro.github.io/bsem/" target="_blank">bsem</a>
-                    </div>
-                </li>
-                <li><a href="https://scholar.google.com/citations?user=UaDDENIAAAAJ&hl=en&oi=ao" target="_blank">Publications</a></li>
-                <li><a href="https://rvpanaro.notion.site/245230b1f57580c8b398c42a8913f29f?v=245230b1f57580e0bd6e000c6be59761" target="_blank">Talks</a></li>
-            </ul>
-        </nav>
-    </header>
-
-  <main>
-    <section class="about" aria-labelledby="about-heading">
-      <h2 id="about-heading">About Me</h2>
-      <p>
-        I am a member of the Working Group Statistical Methods for Clinical Trials of the Institute for Medical Statistics – Göttingen, focused on evidence synthesis/meta-analysis and uncertainty-aware decision support. My work balances embedded methodological alignment with clinical priorities and independent development of reproducible statistical tooling.
-        I emphasize reproducibility, clarity, and translating statistical uncertainty into actionable insight.
-        Previous experience involve evidence synthesis, time-to-event and dimension reduction techniques. I maintain and build R-based statistical tooling, quantify uncertainty, and teach/communicate statistical methods.
-        I am currently active in methods development and teaching, and open to conversations about methodological challenges in evidence-based medicine.
-      </p>
-    </section>
-
-    <section class="contact" aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Contact</h2>
-      <p>Email: <a href="mailto:rvpanaro@gmail.com">rvpanaro@gmail.com</a></p>
-    </section>
+<body class="page-home">
+  <main class="main-simple">
+    <div class="hero-row">
+      <div class="hero-left">
+        <img src="avatar.png" alt="Renato Panaro" class="home-avatar" width="220" height="220">
+        <h1 class="page-title">Renato Panaro</h1>
+        <p class="link-row">
+          <a href="https://www.linkedin.com/in/rvpanaro/" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="https://scholar.google.com/citations?user=UaDDENIAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://rvpanaro.notion.site/245230b1f57580c8b398c42a8913f29f?v=245230b1f57580e0bd6e000c6be59761" target="_blank" rel="noopener">Notion</a>
+          <a href="https://rvpanaro.github.io/spsurv/" target="_blank" rel="noopener">spsurv</a>
+          <a href="https://rvpanaro.github.io/bsem/" target="_blank" rel="noopener">bsem</a>
+          <a href="about.html">About</a>
+          <a href="mailto:rvpanaro@gmail.com">Email</a>
+        </p>
+      </div>
+      <div class="hero-right">
+        <p class="hero-intro">Hi! I'm Renato Panaro, a PhD student in Biostatistics at the Department of Medical Statistics, University Medical Center Göttingen. I work on meta-analysis of clinical trials, survival analysis, and reproducible statistical methods. I'm based in Göttingen, Germany.</p>
+        <p>If you'd like to learn more about what I do, you might find these useful:</p>
+        <ul class="learn-more-list">
+      <li><strong><a href="https://rvpanaro.github.io/spsurv/" target="_blank" rel="noopener">spsurv</a></strong> (R package, CRAN) — Semi-parametric survival analysis: proportional hazards, proportional odds, and accelerated failure time models for time-to-event data.</li>
+      <li><strong><a href="https://rvpanaro.github.io/bsem/" target="_blank" rel="noopener">bsem</a></strong> (R package) — Bayesian structural equation modeling with Stan: confirmatory factor analysis and path models.</li>
+      <li><strong><a href="https://scholar.google.com/citations?user=UaDDENIAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Google Scholar</a></strong> — Publications and preprints on subgroup meta-analysis and related methods.</li>
+      <li><strong><a href="about.html">About</a></strong> — Full profile, expertise, teaching, and contact.</li>
+        </ul>
+      </div>
+    </div>
   </main>
+
 
   <footer>
     <p>&copy; <span id="current-year"></span> Renato Valladares Panaro. Source: <a href="https://github.com/rvpanaro/rvpanaro.github.io" target="_blank" rel="noopener">GitHub Repo</a></p>
   </footer>
 
   <script>
-    // current year
     document.getElementById('current-year').textContent = new Date().getFullYear();
 
-    // dropdown accessibility
-    document.querySelectorAll('.dropdown').forEach(dropdown => {
-      const btn = dropdown.querySelector('.dropbtn');
-      const menu = dropdown.querySelector('.dropdown-content');
-
-      btn.addEventListener('click', e => {
-        const expanded = btn.getAttribute('aria-expanded') === 'true';
-        btn.setAttribute('aria-expanded', String(!expanded));
-        menu.classList.toggle('show');
-      });
-
-      btn.addEventListener('keydown', e => {
-        if (e.key === 'Escape') {
-          menu.classList.remove('show');
-          btn.setAttribute('aria-expanded', 'false');
-          btn.focus();
-        }
-      });
-
-      document.addEventListener('click', e => {
-        if (!dropdown.contains(e.target)) {
-          menu.classList.remove('show');
-          btn.setAttribute('aria-expanded', 'false');
-        }
-      });
-    });
-
-    // dark / light toggle
-    const themeBtn = document.querySelector('.theme-switcher');
-    const themeLabel = themeBtn.querySelector('.theme-label');
-    function setTheme(t) {
-      document.documentElement.setAttribute('data-theme', t);
-      themeLabel.textContent = t === 'dark' ? 'Light' : 'Dark';
-      themeBtn.textContent = t === 'dark' ? '☀️ Light' : '🌙 Dark';
-    }
-    // initialize from localStorage
-    const stored = localStorage.getItem('theme');
-    const initial = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-    setTheme(initial);
-    themeBtn.addEventListener('click', () => {
-      const current = document.documentElement.getAttribute('data-theme');
-      const next = current === 'dark' ? 'light' : 'dark';
-      setTheme(next);
-      localStorage.setItem('theme', next);
-    });
-
-    // simple testimonial carousel logic
-    const inner = document.getElementById('carousel-inner');
-    const items = inner.querySelectorAll('.carousel-item');
-    let idx = 0;
-    function updateCarousel() {
-      inner.style.transform = `translateX(-${idx * 100}%)`;
-      items.forEach((it, i) => it.setAttribute('aria-hidden', i !== idx));
-    }
-    document.getElementById('prev').addEventListener('click', () => {
-      idx = (idx - 1 + items.length) % items.length;
-      updateCarousel();
-    });
-    document.getElementById('next').addEventListener('click', () => {
-      idx = (idx + 1) % items.length;
-      updateCarousel();
-    });
-    // auto-advance (optional)
-    setInterval(() => {
-      idx = (idx + 1) % items.length;
-      updateCarousel();
-    }, 7000);
-    updateCarousel();
   </script>
 </body>
 </html>
