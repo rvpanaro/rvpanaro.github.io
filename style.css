@@ -257,7 +257,8 @@ main {
 }
 .main-simple .home-avatar {
   width: 220px;
-  height: 220px;
+  height: auto;
+  aspect-ratio: 816 / 1024;
   border-radius: 0;
   object-fit: cover;
 }
