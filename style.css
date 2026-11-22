@@ -404,6 +404,10 @@ blockquote {
   max-width: none;
 }
 
+.feedback-quotes .feedback-translation {
+  margin-top: 0.35em;
+}
+
 .feedback-quotes p:last-child { margin-bottom: 0; }
 
 .mentions-placeholder p {
