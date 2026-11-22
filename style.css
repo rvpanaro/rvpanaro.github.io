@@ -404,11 +404,41 @@ blockquote {
   max-width: none;
 }
 
-.feedback-quotes .feedback-translation {
-  margin-top: 0.35em;
+.feedback-quotes p:last-child { margin-bottom: 0; }
+
+.feedback-lang-switch {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }
 
-.feedback-quotes p:last-child { margin-bottom: 0; }
+.feedback-lang-btn {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  padding: 0.35em 0.85em;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: var(--muted);
+  font-family: inherit;
+  transition: background var(--transition), color var(--transition), border-color var(--transition);
+}
+
+.feedback-lang-btn:hover {
+  color: var(--fg);
+  border-color: var(--accent);
+}
+
+.feedback-lang-btn.is-active {
+  background: var(--accent-soft);
+  color: var(--accent);
+  border-color: var(--accent);
+  font-weight: 500;
+}
+
+.feedback-text[hidden] {
+  display: none;
+}
 
 .mentions-placeholder p {
   background: var(--accent-soft);

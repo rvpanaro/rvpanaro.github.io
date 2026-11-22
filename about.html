@@ -129,28 +129,32 @@
     <section class="teaching" aria-labelledby="teaching-heading">
       <h2 id="teaching-heading">Teaching</h2>
       <p>
-        Applied statistics at UMG, including English-language modules for medical students. A few anonymized comments from course evaluations:
+        Applied statistics at UMG, including English-language modules for medical students. A few anonymized comments from course evaluations (verbatim in German; switch to English if you prefer):
       </p>
+      <div class="feedback-lang-switch" role="group" aria-label="Evaluation language">
+        <button type="button" class="feedback-lang-btn is-active" data-lang="de" aria-pressed="true">Deutsch</button>
+        <button type="button" class="feedback-lang-btn" data-lang="en" aria-pressed="false">English</button>
+      </div>
       <ul class="feedback-quotes">
         <li>
-          <p class="feedback-original" lang="en">Original: “Renato was especially attentive and answered patiently to all our questions, allowing us to revise all the material and focus on important things.”</p>
-          <p class="feedback-translation">English: <em>“Renato was especially attentive and answered patiently to all our questions, allowing us to revise all the material and focus on important things.”</em></p>
+          <p class="feedback-text" lang="de" data-lang="de">“Renato war besonders aufmerksam und hat geduldig alle unsere Fragen beantwortet, sodass wir den gesamten Stoff wiederholen und uns auf die wichtigen Dinge konzentrieren konnten.”</p>
+          <p class="feedback-text" lang="en" data-lang="en" hidden>“Renato was especially attentive and answered patiently to all our questions, allowing us to revise all the material and focus on important things.”</p>
         </li>
         <li>
-          <p class="feedback-original" lang="en">Original: “I liked when we tried to solve the exercises all together.”</p>
-          <p class="feedback-translation">English: <em>“I liked when we tried to solve the exercises all together.”</em></p>
+          <p class="feedback-text" lang="de" data-lang="de">“Es hat mir gut gefallen, als wir die Übungsaufgaben gemeinsam gelöst haben.”</p>
+          <p class="feedback-text" lang="en" data-lang="en" hidden>“I liked when we tried to solve the exercises all together.”</p>
         </li>
         <li>
-          <p class="feedback-original" lang="en">Original: “Overall, very good classes, right amount of content and simple enough.”</p>
-          <p class="feedback-translation">English: <em>“Overall, very good classes, right amount of content and simple enough.”</em></p>
+          <p class="feedback-text" lang="de" data-lang="de">“Insgesamt sehr gute Veranstaltungen, genau der richtige Umfang und verständlich gehalten.”</p>
+          <p class="feedback-text" lang="en" data-lang="en" hidden>“Overall, very good classes, right amount of content and simple enough.”</p>
         </li>
         <li>
-          <p class="feedback-original" lang="de">Original: “Das Anbieten eines englischen Moduls war eine tolle Möglichkeit, gerade auch weil es zu dem Thema passt...; außerdem war unser Dozent sehr kompetent und nett.”</p>
-          <p class="feedback-translation">English: <em>“Offering an English module was a great opportunity, especially as it fit the topic; our lecturer was very knowledgeable and friendly.”</em></p>
+          <p class="feedback-text" lang="de" data-lang="de">“Das Anbieten eines englischen Moduls war eine tolle Möglichkeit, gerade auch weil es zu dem Thema passt...; außerdem war unser Dozent sehr kompetent und nett.”</p>
+          <p class="feedback-text" lang="en" data-lang="en" hidden>“Offering an English module was a great opportunity, especially as it fit the topic; our lecturer was very knowledgeable and friendly.”</p>
         </li>
         <li>
-          <p class="feedback-original" lang="de">Original: “Unser Dozent im englischen Seminar war sehr kompetent und hat trotz des teils nicht so aufmerksamen Publikums sehr engagiert versucht, uns die relevanten Sachen beizubringen.”</p>
-          <p class="feedback-translation">English: <em>“Our lecturer in the English seminar was very knowledgeable and, despite a sometimes inattentive audience, tried very hard to teach us the relevant material.”</em></p>
+          <p class="feedback-text" lang="de" data-lang="de">“Unser Dozent im englischen Seminar war sehr kompetent und hat trotz des teils nicht so aufmerksamen Publikums sehr engagiert versucht, uns die relevanten Sachen beizubringen.”</p>
+          <p class="feedback-text" lang="en" data-lang="en" hidden>“Our lecturer in the English seminar was very knowledgeable and, despite a sometimes inattentive audience, tried very hard to teach us the relevant material.”</p>
         </li>
       </ul>
     </section>
@@ -194,6 +198,21 @@
           menu.classList.remove('show');
           btn.setAttribute('aria-expanded', 'false');
         }
+      });
+    });
+
+    document.querySelectorAll('.feedback-lang-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const lang = btn.dataset.lang;
+        if (!lang) return;
+        document.querySelectorAll('.feedback-lang-btn').forEach(b => {
+          const active = b.dataset.lang === lang;
+          b.classList.toggle('is-active', active);
+          b.setAttribute('aria-pressed', String(active));
+        });
+        document.querySelectorAll('.feedback-text').forEach(p => {
+          p.hidden = p.dataset.lang !== lang;
+        });
       });
     });
 
